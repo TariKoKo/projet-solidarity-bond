@@ -1,6 +1,10 @@
-body {
-color:black;
-background-color:red;
-background-image:url(assets/image/Fond_index.png);
-background-attachment:fixed;
+body
+{
+	color:black;
+	background-color:white;
+	background-image:url("../../assets/image/Fond_index.png");
+	background-position: 0% 100%;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;	
 }
