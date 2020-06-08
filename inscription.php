@@ -13,7 +13,7 @@
 
     </header>
     <main>
-        <div class="container">
+        <div class="container couleur-inscription">
             <h4 class="card-title mt-3 text-center">Inscription</h4>
 
             <!-- création bouton nom -->
@@ -62,6 +62,7 @@
                     <input type="submit" value="S'inscrire" id="submitButton" class="form-control"/>
                 </p>
             </form>
+        </div>
     </main>
     <footer>
         <!-- <?php include 'footer.php' ?> -->

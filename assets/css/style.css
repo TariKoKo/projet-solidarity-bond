@@ -7,3 +7,6 @@ input[type=submit]:hover{
   font-weight: bold;
   background-color: #8D8D8D;
 }
+.couleur-inscription{
+  background-color: #EFEFEF;
+}
