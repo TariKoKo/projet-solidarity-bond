@@ -38,3 +38,10 @@ input[type=submit]:hover{
 .couleur-inscription{
   background-color: #EFEFEF;
 } 
+.couleur-inscription{
+  background-color: #EFEFEF;
+  padding: 0.5em;
+}
+.case-a-cocher{
+  padding: 1em;
+}

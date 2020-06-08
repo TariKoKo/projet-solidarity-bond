@@ -52,20 +52,21 @@
                         !</small>
                 </div>
 
-
-                <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1" required="required">
-                <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
-                        href="mentionslégales.php">mentions légales</a> </label>
+                <div class="case-a-cocher">
+                    <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1" required="required">
+                    <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
+                            href="mentionslégales.php">mentions légales</a> </label>
+                </div>
 
                 <!-- Bouton pour créer son compte-->
                 <p class="signin button">
-                    <input type="submit" value="S'inscrire" id="submitButton" class="form-control"/>
+                    <input type="submit" value="S'inscrire" id="submitButton" class="form-control" />
                 </p>
             </form>
         </div>
     </main>
-    <footer>
-        <!-- <?php include 'footer.php' ?> -->
+    <footer id="footer2">
+        <?php include 'footer.php' ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
