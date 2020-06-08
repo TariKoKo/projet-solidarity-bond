@@ -11,9 +11,6 @@
 
 <body id="inscription">
     <header>
-
-    </header>
-    <header>
         <div class="container-fluid">
             <div class="row mt-5">
                 <div class="col-1">
@@ -33,57 +30,59 @@
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4 couleur-inscription">
-            <h4 class="card-title mt-3 text-center">Créer son compte</h4>
+                    <h4 class="card-title mt-3 text-center">Créer son compte</h4>
 
-            <!-- création bouton nom -->
+                    <!-- création bouton nom -->
 
-            <form method="post" autocomplete="on">
-                <div id="register" class="form-group">
-                    <label for="usernamesignup">Nom de l'entreprise</label>
-                    <input type="text" class="form-control" id="usernamesignup" maxlength="30" Name="Nom_Personne"
-                        placeholder="Nom de l'entreprise">
+                    <form method="post" autocomplete="on">
+                        <div id="register" class="form-group">
+                            <label for="usernamesignup">Nom de l'entreprise</label>
+                            <input type="text" class="form-control" id="usernamesignup" maxlength="30"
+                                Name="Nom_Personne" placeholder="Nom de l'entreprise">
+                        </div>
+
+
+                        <!-- création bouton prénom -->
+
+                        <div id="register" class="form-group">
+                            <label for="Phonenumber">Numéro de téléphone</label>
+                            <input type="number" class="form-control" id="numéro" name="numéro_téléphone" maxlength="10"
+                                placeholder="Numéro de téléphone">
+                        </div>
+
+                        <!-- création Bouton adresse mail -->
+
+                        <div id=register class="form-group">
+                            <label for="Inputemail">Adresse email</label>
+                            <input type="email" class="form-control" id="InputEmail" Name="Adresse_eMail"
+                                placeholder="votreadresse@exemple.com">
+                        </div>
+
+                        <!-- création Bouton Mot de passe -->
+
+                        <div id="register" class="form-group">
+                            <label for="passwordsignup">Mot de passe</label>
+                            <input type="password" class="form-control" id="passwordsignup" name="Mot_De_Passe"
+                                maxlength="12" placeholder="Mot de passe">
+                            <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un
+                                chiffre
+                            </small>
+                        </div>
+
+                        <div class="case-a-cocher">
+                            <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1"
+                                required="required">
+                            <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
+                                    href="mentionslégales.php">mentions légales</a> </label>
+                        </div>
+
+                        <!-- Bouton pour créer son compte-->
+                        <p class="signin button">
+                            <input type="submit" value="S'inscrire" id="submitButton" class="form-control" />
+                        </p>
+                    </form>
                 </div>
-
-
-                <!-- création bouton prénom -->
-
-                <div id="register" class="form-group">
-                    <label for="Phonenumber">Numéro de téléphone</label>
-                    <input type="number" class="form-control" id="numéro" name="numéro_téléphone" maxlength="10"
-                        placeholder="Numéro de téléphone">
-                </div>
-
-                <!-- création Bouton adresse mail -->
-
-                <div id=register class="form-group">
-                    <label for="Inputemail">Adresse email</label>
-                    <input type="email" class="form-control" id="InputEmail" Name="Adresse_eMail"
-                        placeholder="votreadresse@exemple.com">
-                </div>
-
-                <!-- création Bouton Mot de passe -->
-
-                <div id="register" class="form-group">
-                    <label for="passwordsignup">Mot de passe</label>
-                    <input type="password" class="form-control" id="passwordsignup" name="Mot_De_Passe" maxlength="12"
-                        placeholder="Mot de passe">
-                    <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un chiffre
-                    </small>
-                </div>
-
-                <div class="case-a-cocher">
-                    <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1" required="required">
-                    <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
-                            href="mentionslégales.php">mentions légales</a> </label>
-                </div>
-
-                <!-- Bouton pour créer son compte-->
-                <p class="signin button">
-                    <input type="submit" value="S'inscrire" id="submitButton" class="form-control" />
-                </p>
-            </form>
-            </div>
-            <div class="col-4"></div>
+                <div class="col-4"></div>
             </div>
         </div>
     </main>
