@@ -1,75 +1,68 @@
-#index
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_index.png");
+#index {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_index.png");
 	background-position: 0% 100%;
 	background-size: 100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#projet
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_projet.png");
+#projet {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_projet.png");
 	background-position: 0% 100%;
 	background-size: 100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#solution
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_solution.png");
+#solution {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_solution.png");
 	background-position: 0% 100%;
 	background-size: 100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#discussion
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_discussion.png");
+#discussion {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_discussion.png");
 	background-position: 0% 0%;
 	background-size: 115%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#inscription{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_inscription.png");
+#inscription {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_inscription.png");
 	background-position: 35% 50%;
 	background-size: 115%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
-h1
-{
+
+h1 {
 	padding-left: 2%;
 }
 
-#text_logo:hover
-{
+#text_logo:hover {
 	font-weight: bold;
 }
 
-#text_logo
-{
+#text_logo {
 	color: black;
 	font-size: 130%;
 	text-decoration: none;
 }
 
-#container
-{
+#container {
 	background-color: white;
 	border-radius: 30px;
 	border-color: black;
