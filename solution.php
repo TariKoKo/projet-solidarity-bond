@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notre solution</title>
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body id="solution">
 	<div class="container-fluid">
@@ -15,12 +16,10 @@
 			<div class="col-1">
 				<a href="index.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
 			</div>
-			<div class="col-9 mt-4">
+			<div class="col-8 mt-4">
 				<h1 class="text-white">Notre Solution</h1>
 			</div>
-			<div class="col-1 mt-4">
-				<button>Connexion</button>
-			</div>
+			<div> <?php include('boutonConnexionBlanc.php'); ?> </div>
 		</div>
 	</div>
 	<div id="container" class="container mt-5 text-justify">
