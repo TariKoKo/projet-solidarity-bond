@@ -42,6 +42,15 @@
 	background-attachment:fixed;	
 }
 
+#inscription{
+	color:black;
+	background-color:white;
+	background-image:url("../../assets/image/Fond_inscription.png");
+	background-position: 35% 50%;
+	background-size: 115%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
 h1
 {
 	padding-left: 2%;

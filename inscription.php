@@ -6,15 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 
-<body>
+<body id="inscription">
     <header>
 
     </header>
+    <header>
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-1">
+
+                </div>
+                <div class="col-1">
+                    <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+                </div>
+                <div class="col-9 mt-4">
+                    <h1>Projet Solidarity-Bond</h1>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <div class="container couleur-inscription">
-            <h4 class="card-title mt-3 text-center">Inscription</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 couleur-inscription">
+            <h4 class="card-title mt-3 text-center">Créer son compte</h4>
 
             <!-- création bouton nom -->
 
@@ -49,7 +68,7 @@
                     <input type="password" class="form-control" id="passwordsignup" name="Mot_De_Passe" maxlength="12"
                         placeholder="Mot de passe">
                     <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un chiffre
-                        !</small>
+                    </small>
                 </div>
 
                 <div class="case-a-cocher">
@@ -63,6 +82,9 @@
                     <input type="submit" value="S'inscrire" id="submitButton" class="form-control" />
                 </p>
             </form>
+            </div>
+            <div class="col-4"></div>
+            </div>
         </div>
     </main>
     <footer id="footer2">
