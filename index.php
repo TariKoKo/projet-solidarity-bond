@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    
+    <header></header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
