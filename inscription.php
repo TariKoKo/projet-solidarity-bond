@@ -52,10 +52,11 @@
                         !</small>
                 </div>
 
-
+                <div class="case-a-cocher">
                 <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1" required="required">
                 <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
                         href="mentionslégales.php">mentions légales</a> </label>
+                </div>
 
                 <!-- Bouton pour créer son compte-->
                 <p class="signin button">
