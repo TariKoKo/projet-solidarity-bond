@@ -10,17 +10,14 @@
 	<div class="container-fluid">
 		<div class="row mt-5">
 			<div class="col-1">
-				
 			</div>
 			<div class="col-1">
 				<a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
 			</div>
-			<div class="col-9 mt-4">
+			<div class="col-8 mt-4">
 				<h1>Projet Solidarity-Bond</h1>
 			</div>
-			<div class="col-1 mt-4">
-				<button>Connexion</button>
-			</div>
+			<div> <?php include('boutonConnexion.php'); ?> </div>
 		</div>
 	</div>
 	<div class="container mt-5">

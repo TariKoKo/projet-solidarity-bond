@@ -44,3 +44,9 @@ input[type=submit]:hover {
 .case-a-cocher {
   padding: 1em;
 }
+
+#bouton-connect
+{
+  font-size: 25px;
+  font-weight: bold;
+}
