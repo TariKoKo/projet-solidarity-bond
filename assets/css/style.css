@@ -1,3 +1,10 @@
+footer {
+  background-color: black;
+}
+
+.click:hover {
+	text-decoration: none ;
+=======
 input[type=submit] {
   background-color: #AAAAAA;
   color: black;
@@ -9,4 +16,4 @@ input[type=submit]:hover{
 }
 .couleur-inscription{
   background-color: #EFEFEF;
-}
+} 
