@@ -1,9 +1,9 @@
-<div class='col-2 mt-4 bd-highlight' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded' data-toggle='modal'
-        data-target='#elegantModalForm'>Connexion</a></div>
-    		<div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'
-        aria-hidden='true'>
-    		<div class='modal-dialog' role='document'>
-    			<!--Content-->
+<div class='col-2 mt-4 bd-highlight' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded'
+    data-toggle='modal' data-target='#elegantModalForm'>Connexion</a></div>
+<div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'
+    aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <!--Content-->
         <div class='modal-content form-elegant'>
             <!--Header-->
             <div class='modal-header text-center'>
@@ -27,7 +27,8 @@
                             passe</label>
                     </div>
                     <div class='text-center mb-3'>
-                        <input type='submit' value='Se connecter' class='btn blue-gradient btn-block btn-rounded z-depth-1a'>
+                        <input type='submit' value='Se connecter'
+                            class='btn blue-gradient btn-block btn-rounded z-depth-1a'>
                     </div>
                 </form>
             </div>
@@ -37,5 +38,5 @@
                         href='inscription.php' class='blue-text ml-1'>S'inscrire</a></p>
             </div>
         </div>
-		</div>
-	</div>
+    </div>
+</div>
