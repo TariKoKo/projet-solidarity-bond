@@ -36,8 +36,8 @@
 	color:black;
 	background-color:white;
 	background-image:url("../../assets/image/Fond_discussion.png");
-	background-position: 0% 40%;
-	background-size: 109%;
+	background-position: 0% 0%;
+	background-size: 115%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;	
 }
@@ -47,10 +47,16 @@ h1
 	padding-left: 2%;
 }
 
+#text_logo:hover
+{
+	font-weight: bold;
+}
+
 #text_logo
 {
 	color: black;
 	font-size: 130%;
+	text-decoration: none;
 }
 
 #container
