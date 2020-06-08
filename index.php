@@ -7,6 +7,5 @@
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 <body>
-    <h1>C'est en train de me tendre !</h1>
 </body>
 </html>
