@@ -4,4 +4,16 @@ footer {
 
 .click:hover {
 	text-decoration: none ;
+=======
+input[type=submit] {
+  background-color: #AAAAAA;
+  color: black;
+  font-weight: 600;
 }
+input[type=submit]:hover{
+  font-weight: bold;
+  background-color: #8D8D8D;
+}
+.couleur-inscription{
+  background-color: #EFEFEF;
+} 
