@@ -22,15 +22,16 @@
             <div> <?php include('boutonConnexion.php'); ?> </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container-fluid mt-5"></br></div>
+    <div class="container-fluid mt-5">
         <div class="row text-center">
-            <div class="col-sm mt-5">
+            <div class="col-4 mt-5">
                 <a id="text_logo" href="projet.php"><img src="assets/image/Logo_projet.png">Notre projet</a>
             </div>
-            <div class="col-sm mt-5">
+            <div class="col-4 mt-5">
                 <a id="text_logo" href="solution.php"><img src="assets/image/Logo_solution.png">Notre solution</a>
             </div>
-            <div class="col-sm mt-5">
+            <div class="col-4 mt-5">
                 <a id="text_logo" href="discussion.php"><img src="assets/image/Logo_discussion.png">Discussion</a>
             </div>
         </div>
