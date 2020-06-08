@@ -1,4 +1,4 @@
-body
+#index
 {
 	color:black;
 	background-color:white;
@@ -7,4 +7,55 @@ body
 	background-size: 100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;	
+}
+
+#projet
+{
+	color:black;
+	background-color:white;
+	background-image:url("../../assets/image/Fond_projet.png");
+	background-position: 0% 100%;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;	
+}
+
+#solution
+{
+	color:black;
+	background-color:white;
+	background-image:url("../../assets/image/Fond_solution.png");
+	background-position: 0% 100%;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;	
+}
+
+#discussion
+{
+	color:black;
+	background-color:white;
+	background-image:url("../../assets/image/Fond_discussion.png");
+	background-position: 0% 40%;
+	background-size: 109%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;	
+}
+
+h1
+{
+	padding-left: 2%;
+}
+
+#text_logo
+{
+	color: black;
+	font-size: 130%;
+}
+
+#container
+{
+	background-color: white;
+	border-radius: 30px;
+	border-color: black;
 }

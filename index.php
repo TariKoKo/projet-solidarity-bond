@@ -6,17 +6,33 @@
     <title>Accueil</title>
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-2">
-				<a href=""><img src="assets/image/Logo_cesi.png"></a>>
+<body id="index">
+	<div class="container-fluid">
+		<div class="row mt-5">
+			<div class="col-1">
+				
 			</div>
-			<div class="col-8">
+			<div class="col-1">
+				<a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+			</div>
+			<div class="col-9 mt-4">
 				<h1>Projet Solidarity-Bond</h1>
 			</div>
-			<div class="col-2">
+			<div class="col-1 mt-4">
 				<button>Connexion</button>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-5">
+		<div class="row text-center">
+			<div class="col-sm mt-5">
+				<a id="text_logo" href="projet.php"><img src="assets/image/Logo_projet.png">Notre projet</a>
+			</div>
+			<div class="col-sm mt-5">
+				<a id="text_logo" href="solution.php"><img src="assets/image/Logo_solution.png">Notre solution</a>
+			</div>
+			<div class="col-sm mt-5">
+				<a id="text_logo" href="discussion.php"><img src="assets/image/Logo_discussion.png">Discussion</a>
 			</div>
 		</div>
 	</div>
