@@ -48,6 +48,16 @@
 	background-attachment: fixed;
 }
 
+#partenariats {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond-partenariat.jpg");
+	background-position: 0% 0%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 h1 {
 	padding-left: 2%;
 }
@@ -66,4 +76,3 @@ h1 {
 	border-radius: 30px;
 	border-color: black;
 }
-
