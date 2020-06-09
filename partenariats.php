@@ -10,6 +10,7 @@
 </head>
 
 <body id="partenariats">
+    <header>
         <div class="container-fluid">
             <div class="row mt-5">
                 <div class="col-1">
@@ -23,7 +24,19 @@
                 <div> <?php include('boutonConnexion.php'); ?> </div>
             </div>
         </div>
-    <main></main>
+    </header>
+    <main>
+        <div class="container-fluid mt-4">
+            <div id="photoEvenement" class="row justify-content-center">
+                <div class="card  p-2">
+                    <img class="card-img-top" src="assets/image/carrefour.png" alt="carrefour">
+                </div>
+                <div class="col-1"></div>
+                <div class="card  p-2">
+                    <img class="card-img-top" src="assets/image/leclerc.png" alt="leclerc">
+                </div>
+            </div>
+    </main>
     <footer id="footer2">
         <?php include('footer.php'); ?>
     </footer>

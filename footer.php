@@ -43,7 +43,7 @@
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="mt-4"> <a class="text-white click" href="#!">Adresse mail/Numéro de téléphone</a> </h5>
+          <h5 class="mt-4"> <p class="text-white">07.53.64.26.81 / romain.malarmey@viacesi.fr</p> </h5>
 
         </div>
         <!-- Grid column -->
@@ -53,7 +53,7 @@
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="mt-4"> <a class="text-white click" href="#!">Conditions générales d'utilisation</a> </h5>
+          <h5 class="mt-4"> <a class="text-white click" href="cgu.php">Conditions générales d'utilisation</a> </h5>
 
         </div>
         <!-- Grid column -->
