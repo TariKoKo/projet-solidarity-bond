@@ -32,21 +32,21 @@
                 <div class="col-4 couleur-inscription">
                     <h4 class="card-title mt-3 text-center">Créer son compte</h4>
 
-                    <!-- création bouton nom -->
+                    <!-- création bouton nom de l'entreprise-->
 
-                    <form method="post" autocomplete="on">
+                    <form method="post" action="scriptInscription.php" autocomplete="on">
                         <div id="register" class="form-group">
                             <label for="usernamesignup">Nom de l'entreprise</label>
                             <input type="text" class="form-control" id="usernamesignup" maxlength="30"
-                                Name="Nom_Personne" placeholder="Nom de l'entreprise">
+                                Name="nom" placeholder="Nom de l'entreprise">
                         </div>
 
 
-                        <!-- création bouton prénom -->
+                        <!-- création bouton numéro -->
 
                         <div id="register" class="form-group">
                             <label for="Phonenumber">Numéro de téléphone</label>
-                            <input type="number" class="form-control" id="numéro" name="numéro_téléphone" maxlength="10"
+                            <input type="number" class="form-control" id="numéro" name="tel" maxlength="10"
                                 placeholder="Numéro de téléphone">
                         </div>
 
@@ -54,7 +54,7 @@
 
                         <div id=register class="form-group">
                             <label for="Inputemail">Adresse email</label>
-                            <input type="email" class="form-control" id="InputEmail" Name="Adresse_eMail"
+                            <input type="email" class="form-control" id="InputEmail" Name="email"
                                 placeholder="votreadresse@exemple.com">
                         </div>
 
@@ -62,7 +62,7 @@
 
                         <div id="register" class="form-group">
                             <label for="passwordsignup">Mot de passe</label>
-                            <input type="password" class="form-control" id="passwordsignup" name="Mot_De_Passe"
+                            <input type="password" class="form-control" id="passwordsignup" name="Pass"
                                 maxlength="12" placeholder="Mot de passe">
                             <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un
                                 chiffre

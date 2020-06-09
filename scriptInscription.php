@@ -20,7 +20,7 @@
         {
 
             // Requête préparée pour empêcher les injections SQL
-            $requete = $bdd->prepare("INSERT INTO entreprise(Nom_Entreprise,Adresse_email,Mot_de_passe,Numero_tel) VALUES(  ²:nom,:email,:Pass,:tel);");
+            $requete = $bdd->prepare("INSERT INTO entreprise(Nom_Entreprise,Adresse_email,Mot_de_passe,Numero_tel) VALUES(:nom,:email,:Pass,:tel);");
     
             $requete->bindValue(':email', $e_mail, PDO::PARAM_STR);
             $requete->bindValue(':Pass', $p_word, PDO::PARAM_STR);
