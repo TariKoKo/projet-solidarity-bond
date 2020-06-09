@@ -28,17 +28,6 @@
 	background-attachment: fixed;
 }
 
-<<<<<<< HEAD
-#discussion
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_discussion.png");
-	background-position: 0% 40%;
-	background-size: 109%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
-=======
 #discussion {
 	color: black;
 	background-color: white;
@@ -57,23 +46,17 @@
 	background-size: 115%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
->>>>>>> 4e510f34c208473893008509d24b22d7b17355f5
 }
 
 h1 {
 	padding-left: 2%;
 }
 
-<<<<<<< HEAD
-#text_logo
-{
-=======
 #text_logo:hover {
 	font-weight: bold;
 }
 
 #text_logo {
->>>>>>> 4e510f34c208473893008509d24b22d7b17355f5
 	color: black;
 	font-size: 130%;
 }
