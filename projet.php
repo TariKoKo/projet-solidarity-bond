@@ -25,36 +25,27 @@
         </div>
     </div>
     <div id="container" class="container mt-5 text-justify">
-        <h2>« Texte » est issu du mot latin « textum », dérivé du verbe « texere » qui signifie « tisser ». Le mot
-            s'applique à l'entrelacement des fibres utilisées dans le tissage, voir par exemple Ovide : « Quo super
-            iniecit textum rude sedula Baucis = (un siège) sur lequel Baucis empressée avait jeté un tissu grossier »2
-            ou au tressage (exemple chez Martial « Vimineum textum = panier d'osier tressé »). Le verbe a aussi le sens
-            large de construire comme dans « basilicam texere = construire une basilique » chez Cicéron3.
-
-            Le sens figuré d'éléments de langage organisés et enchaînés apparaît avant l'Empire romain : il désigne un
-            agencement particulier du discours. Exemple : « epistolas texere = composer des épîtres » - Cicéron (ier
-            siècle av. J.-C.)4 ou plus nettement chez Quintilien (ier siècle apr. J.-C.) : « verba in textu jungantur =
-            l'agencement des mots dans la phrase »5.
-
-            Les formes anciennes du Moyen Âge désignent au xiie siècle le volume qui contient le texte sacré des
-            Évangiles, puis au xiiie siècle. le texte original d'un livre saint ou des propos de quelqu'un. Au xviie
-            siècle le mot s’applique au passage d'un ouvrage pris comme référence et au début du xixe siècle le mot
-            texte a son sens général d'« écrit »6.« Texte » est issu du mot latin « textum », dérivé du verbe « texere »
-            qui signifie « tisser ». Le mot s'applique à l'entrelacement des fibres utilisées dans le tissage, voir par
-            exemple Ovide : « Quo super iniecit textum rude sedula Baucis = (un siège) sur lequel Baucis empressée avait
-            jeté un tissu grossier »2 ou au tressage (exemple chez Martial « Vimineum textum = panier d'osier tressé »).
-            Le verbe a aussi le sens large de construire comme dans « basilicam texere = construire une basilique » chez
-            Cicéron3.
-
-            Le sens figuré d'éléments de langage organisés et enchaînés apparaît avant l'Empire romain : il désigne un
-            agencement particulier du discours. Exemple : « epistolas texere = composer des épîtres » - Cicéron (ier
-            siècle av. J.-C.)4 ou plus nettement chez Quintilien (ier siècle apr. J.-C.) : « verba in textu jungantur =
-            l'agencement des mots dans la phrase »5.
-
-            Les formes anciennes du Moyen Âge désignent au xiie siècle le volume qui contient le texte sacré des
-            Évangiles, puis au xiiie siècle. le texte original d'un livre saint ou des propos de quelqu'un. Au xviie
-            siècle le mot s’applique au passage d'un ouvrage pris comme référence et au début du xixe siècle le mot
-            texte a son sens général d'« écrit »6.</h2>
+        <div class="row p-5">
+            <div class="col-5">
+                <h3 class="text-center">Présentation du projet</br></h3>  
+                </br>
+                <p>
+                    Le confinement imposé en France comme dans beaucoup d’autres pays du monde, a des conséquences directes sur l’économie. Les échanges commerciaux et la consommation sont mis à mal. Il est important pour notre pays de stabiliser les pertes dans un premier temps et de remettre en marche les activités dans un second. En plus d’une crise sanitaire sans précédent, la France pourrait avoir de grandes difficultés si l’ensemble des organisations ne retrouvent pas un fonctionnement minimal sous peu.  En l’absence, pour l’heure, de traitements médicaux cliniques, la seule possibilité pour enrayer l’épidémie et sauver des vies, subsiste dans la mise en place des gestes barrières et l’acquisition d’équipements de protection. L’actualité nous prouve tous les jours que l’acquisition de ces équipements est délicate. La désindustrialisation du territoire a sa part de responsabilité dans nos difficultés, et il prendrait des années avant de retrouver une efficacité en adéquation avec le besoin des populations et des organisations. De manière plus globale, la stratégie du moment tend plutôt dans la fragmentation massive des unités de production et se dirige sur une répartition géographique équilibrée des unités, favorisant ainsi les circuits courts de distribution. 
+                    Nous allons localement nous inscrire dans cette stratégie en créant une organisation humaine qui proposera une solution technologique, permettant de mettre en relation les demandeurs en besoin d’équipements de protection et le fablab de notre école en capacité d’en produire. Nous aurons à disposition tout le matériel disponible dans celui-ci, et Nous aurons la capacité de produire des solutions technologiques.</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5">
+                <h3 class="text-center">Les besoins des entreprises</br></h3>
+                </br>
+                <p>
+                    Ayant déjà discuter avec plusieurs entreprises, nous pouvons énoncer leurs besoins majeurs. En tant qu’entreprise, pour éviter la propagation du covid 19, des masques et des gants doivent être mis à disposition. De plus, pour assurer les mesures de distanciation, les entreprises ont dû réduire le nombre de personne assistant aux réunions. De même pour les postes de travail où l’effectif se voit réduit, les équipes de production ont été remodelé pour assurer le bon fonctionnement de l’entreprise. Il y a également des plaques de plexiglass mis entre chaque poste pour augmenter la sécurité des employées. L’aménagement des salles s’est vu aussi modifié pour respecter la distanciation. </br> </br>
+                    En outre, des masques et du gel hydroalcoolique sont à disposition pour tous les employés. Les horaires de repas ont dû être divisées en plusieurs services afin de respecter les gestes barrières durant les pauses du midi. Des visières pourraient être mis à disposition dans les métiers physiques nécessitant une respiration ne pouvant être adapté à un simple masque.  
+                </br></br>
+                    De plus, dans certains cas, les visières et les masques cumulés pourraient être une solution adéquate.  
+                    En supplément, des prises de température pourraient se révéler très efficace lorsque des chauffeurs (ou toutes autres personnes) externes venaient à intervenir dans l’entreprise. 
+                    Néanmoins, quand cela est possible, le télétravail reste la meilleure solution pour éviter les regroupements inutiles. </p>
+            </div>
+        </div>
     </div>
     <footer>
         <?php include('footer.php'); ?>

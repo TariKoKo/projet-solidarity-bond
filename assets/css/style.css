@@ -16,11 +16,7 @@ h5:hover {
 }
 
 .click:hover {
-<<<<<<< HEAD
-	text-decoration: none ;
-=======
   text-decoration: none;
->>>>>>> 4e510f34c208473893008509d24b22d7b17355f5
 }
 
 input[type=submit] {
@@ -36,9 +32,6 @@ input[type=submit]:hover {
 
 .couleur-inscription {
   background-color: #EFEFEF;
-<<<<<<< HEAD
-
-=======
 }
 
 .couleur-inscription {
@@ -57,4 +50,10 @@ input[type=submit]:hover {
   font-size: 25px;
   font-weight: bold;
 }
->>>>>>> 4e510f34c208473893008509d24b22d7b17355f5
+
+#crochet
+{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
