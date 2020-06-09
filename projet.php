@@ -46,6 +46,7 @@
                     Néanmoins, quand cela est possible, le télétravail reste la meilleure solution pour éviter les regroupements inutiles. </p>
             </div>
         </div>
+        <img class="pb-4" id="crochet" src="assets/image/coronavirus.jpg">
     </div>
     <footer>
         <?php include('footer.php'); ?>
