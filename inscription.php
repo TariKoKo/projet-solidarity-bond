@@ -86,8 +86,8 @@
             </div>
         </div>
     </main>
-    <footer>
-        <!-- <?php include 'footer.php' ?> -->
+    <footer id="footer2">
+        <?php include 'footer.php' ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
