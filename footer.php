@@ -23,7 +23,7 @@
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="mt-4"> <a class="text-white click" href="#!">En savoir plus sur le CESI</a> </h5>
+          <h5 class="mt-4"> <a class="text-white click" href="https://ecole-ingenieurs.cesi.fr/">En savoir plus sur le CESI</a> </h5>
 
         </div>
         <!-- Grid column -->
@@ -33,7 +33,7 @@
         <div class="col mx-auto">
 
           <!-- Links -->
-          <h5 class="mt-4"> <a class="text-white click" href="#!">Nos partenaires</a> </h5>
+          <h5 class="mt-4"> <a class="text-white click" href="partenariats.php">Nos partenaires</a> </h5>
 
         </div>
         <!-- Grid column -->
