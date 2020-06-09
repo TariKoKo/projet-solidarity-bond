@@ -6,62 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 
-<body>
+<body id="inscription">
     <header>
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-1">
 
+                </div>
+                <div class="col-1">
+                    <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+                </div>
+                <div class="col-9 mt-4">
+                    <h1>Projet Solidarity-Bond</h1>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="container couleur-inscription">
-            <h4 class="card-title mt-3 text-center">Inscription</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 couleur-inscription">
+                    <h4 class="card-title mt-3 text-center">Créer son compte</h4>
 
-            <!-- création bouton nom -->
+                    <!-- création bouton nom -->
 
-            <form method="post" action="s²criptInscription.php" autocomplete="on">
-                <div id="register" class="form-group">
-                    <label for="usernamesignup">Nom de l'entreprise</label>
-                    <input type="text" class="form-control" id="usernamesignup" maxlength="30" name="nom"
-                        placeholder="Nom de l'entreprise">
+                    <form method="post" autocomplete="on">
+                        <div id="register" class="form-group">
+                            <label for="usernamesignup">Nom de l'entreprise</label>
+                            <input type="text" class="form-control" id="usernamesignup" maxlength="30"
+                                Name="Nom_Personne" placeholder="Nom de l'entreprise">
+                        </div>
+
+
+                        <!-- création bouton prénom -->
+
+                        <div id="register" class="form-group">
+                            <label for="Phonenumber">Numéro de téléphone</label>
+                            <input type="number" class="form-control" id="numéro" name="numéro_téléphone" maxlength="10"
+                                placeholder="Numéro de téléphone">
+                        </div>
+
+                        <!-- création Bouton adresse mail -->
+
+                        <div id=register class="form-group">
+                            <label for="Inputemail">Adresse email</label>
+                            <input type="email" class="form-control" id="InputEmail" Name="Adresse_eMail"
+                                placeholder="votreadresse@exemple.com">
+                        </div>
+
+                        <!-- création Bouton Mot de passe -->
+
+                        <div id="register" class="form-group">
+                            <label for="passwordsignup">Mot de passe</label>
+                            <input type="password" class="form-control" id="passwordsignup" name="Mot_De_Passe"
+                                maxlength="12" placeholder="Mot de passe">
+                            <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un
+                                chiffre
+                            </small>
+                        </div>
+
+                        <div class="case-a-cocher">
+                            <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1"
+                                required="required">
+                            <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
+                                    href="mentionslégales.php">mentions légales</a> </label>
+                        </div>
+
+                        <!-- Bouton pour créer son compte-->
+                        <p class="signin button">
+                            <input type="submit" value="S'inscrire" id="submitButton" class="form-control" />
+                        </p>
+                    </form>
                 </div>
-
-
-                <!-- création bouton prénom -->
-
-                <div id="register" class="form-group">
-                    <label for="Phonenumber">Numéro de téléphone</label>
-                    <input type="number" class="form-control" id="numéro" name="tel" maxlength="10"
-                        placeholder="Numéro de téléphone">
-                </div>
-
-                <!-- création Bouton adresse mail -->
-
-                <div id=register class="form-group">
-                    <label for="Inputemail">Adresse email</label>
-                    <input type="email" class="form-control" id="InputEmail" name="email"
-                        placeholder="votreadresse@exemple.com">
-                </div>
-
-                <!-- création Bouton Mot de passe -->
-
-                <div id="register" class="form-group">
-                    <label for="passwordsignup">Mot de passe</label>
-                    <input type="password" class="form-control" id="passwordsignup" name="Pass" maxlength="12"
-                        placeholder="Mot de passe">
-                    <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un chiffre
-                        !</small>
-                </div>
-
-
-                <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1" required="required">
-                <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
-                        href="mentionslégales.php">mentions légales</a> </label>
-
-                <!-- Bouton pour créer son compte-->
-                <p class="signin button">
-                    <input type="submit" value="S'inscrire" id="submitButton" class="form-control"/>
-                </p>
-            </form>
+                <div class="col-4"></div>
+            </div>
         </div>
     </main>
     <footer>

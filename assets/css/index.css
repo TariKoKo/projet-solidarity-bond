@@ -1,36 +1,34 @@
-#index
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_index.png");
+#index {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_index.png");
 	background-position: 0% 100%;
 	background-size: 100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#projet
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_projet.png");
+#projet {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_projet.png");
 	background-position: 0% 100%;
 	background-size: 100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-#solution
-{
-	color:black;
-	background-color:white;
-	background-image:url("../../assets/image/Fond_solution.png");
+#solution {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_solution.png");
 	background-position: 0% 100%;
 	background-size: 100%;
-	background-repeat:no-repeat;
-	background-attachment:fixed;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 #discussion
 {
 	color:black;
@@ -40,21 +38,47 @@
 	background-size: 109%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;	
+=======
+#discussion {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_discussion.png");
+	background-position: 0% 0%;
+	background-size: 115%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-h1
-{
+#inscription {
+	color: black;
+	background-color: white;
+	background-image: url("../../assets/image/Fond_inscription.png");
+	background-position: 35% 50%;
+	background-size: 115%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+>>>>>>> 4e510f34c208473893008509d24b22d7b17355f5
+}
+
+h1 {
 	padding-left: 2%;
 }
 
+<<<<<<< HEAD
 #text_logo
 {
+=======
+#text_logo:hover {
+	font-weight: bold;
+}
+
+#text_logo {
+>>>>>>> 4e510f34c208473893008509d24b22d7b17355f5
 	color: black;
 	font-size: 130%;
 }
 
-#container
-{
+#container {
 	background-color: white;
 	border-radius: 30px;
 	border-color: black;
