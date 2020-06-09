@@ -39,37 +39,14 @@
                 <img id="crochet" src="assets/image/Crochet.png">
             </div>
         </div>
-        <img id="crochet" src="assets/image/CrochetAmélioré.png">
-        <p>« Texte » est issu du mot latin « textum », dérivé du verbe « texere » qui signifie « tisser ». Le mot
-            s'applique à l'entrelacement des fibres utilisées dans le tissage, voir par exemple Ovide : « Quo super
-            iniecit textum rude sedula Baucis = (un siège) sur lequel Baucis empressée avait jeté un tissu grossier »2
-            ou au tressage (exemple chez Martial « Vimineum textum = panier d'osier tressé »). Le verbe a aussi le sens
-            large de construire comme dans « basilicam texere = construire une basilique » chez Cicéron3.
-
-            Le sens figuré d'éléments de langage organisés et enchaînés apparaît avant l'Empire romain : il désigne un
-            agencement particulier du discours. Exemple : « epistolas texere = composer des épîtres » - Cicéron (ier
-            siècle av. J.-C.)4 ou plus nettement chez Quintilien (ier siècle apr. J.-C.) : « verba in textu jungantur =
-            l'agencement des mots dans la phrase »5.
-
-            Les formes anciennes du Moyen Âge désignent au xiie siècle le volume qui contient le texte sacré des
-            Évangiles, puis au xiiie siècle. le texte original d'un livre saint ou des propos de quelqu'un. Au xviie
-            siècle le mot s’applique au passage d'un ouvrage pris comme référence et au début du xixe siècle le mot
-            texte a son sens général d'« écrit »6.
-            « Texte » est issu du mot latin « textum », dérivé du verbe « texere » qui signifie « tisser ». Le mot
-            s'applique à l'entrelacement des fibres utilisées dans le tissage, voir par exemple Ovide : « Quo super
-            iniecit textum rude sedula Baucis = (un siège) sur lequel Baucis empressée avait jeté un tissu grossier »2
-            ou au tressage (exemple chez Martial « Vimineum textum = panier d'osier tressé »). Le verbe a aussi le sens
-            large de construire comme dans « basilicam texere = construire une basilique » chez Cicéron3.
-
-            Le sens figuré d'éléments de langage organisés et enchaînés apparaît avant l'Empire romain : il désigne un
-            agencement particulier du discours. Exemple : « epistolas texere = composer des épîtres » - Cicéron (ier
-            siècle av. J.-C.)4 ou plus nettement chez Quintilien (ier siècle apr. J.-C.) : « verba in textu jungantur =
-            l'agencement des mots dans la phrase »5.
-
-            Les formes anciennes du Moyen Âge désignent au xiie siècle le volume qui contient le texte sacré des
-            Évangiles, puis au xiiie siècle. le texte original d'un livre saint ou des propos de quelqu'un. Au xviie
-            siècle le mot s’applique au passage d'un ouvrage pris comme référence et au début du xixe siècle le mot
-            texte a son sens général d'« écrit »6.</p>
+        <img id="crochet2" src="assets/image/CrochetAmélioré.png">
+        <p class="p-5">
+            Hauteur : 5.00 mm </br></br>
+            Tous les Fillets (soudure d’angle sur tous les côtés) : Radius = 0.50 mm ; Diamètre = 1.00 mm  </br>
+            Fabrication : Imprimante 3D  </br></br>
+            Matière : L'ABS (acrylonitrile butadiène styrène) </br>
+            C'est l'autre matériau préféré des utilisateurs de machines de type FDM. L'exemple donné le plus souvent est celui des briques de Lego, composées d'ABS. Il offre des propriétés plus intéressantes que le PLA en termes de résistance à l'eau et à la chaleur. De plus, son rendu est plus lisse que ce qu'offre le PLA. Il demande donc généralement moins de traitement à la sortie de la machine. </br></br>
+            L'ABS demande une température de 200 à 250°C pour fondre. Il lui faut aussi un plateau chauffant pour éviter qu'il ne se rétracte en refroidissant. Il existe en plusieurs couleurs et peut se trouver sous forme de bobines de filament ou sous forme de polymère liquide pour le procédé SLA.</p>
     </div>
     <footer>
         <?php include('footer.php'); ?>
