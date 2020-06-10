@@ -27,7 +27,7 @@
         </div>
     </header>
     <main>
-        <div id="container" class="container p-5 mt-5 text-justify">
+        <div id="container" class="container p-5 mt-5 text-justify mb-5">
             <h3 class="text-center">Conditions générales d'utilisation du site</br></h3>
             </br>
             <h4>ARTICLE 1 : Objet</h4>
