@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,8 +32,11 @@
     </div>
     <div id="container" class="container mt-5">
         <h2 class="text-center">Service de messagerie</h2>
-        <h4 class="text-right">Bonjour</h4>
-        <h4 class="text-left">Salut mec !</h4>
+        <div class="container">
+            <h2 class="commentaire p-4">Message :</h2>
+            <?php include('displayCommentaire.php')?>
+            <?php include('displayAjoutCommentaire.php')?>
+        </div>
     </div>
     <footer id="footer2">
         <?php include('footer.php'); ?>
