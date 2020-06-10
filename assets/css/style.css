@@ -50,6 +50,12 @@ input[type=submit]:hover {
   font-weight: bold;
 }
 
+#nom_entreprise
+{
+  font-size: 20px;
+  text-align: center;
+}
+
 #crochet {
   display: block;
   margin-right: auto;
