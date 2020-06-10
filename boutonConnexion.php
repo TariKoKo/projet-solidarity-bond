@@ -18,11 +18,11 @@
                 <!--Body-->
                 <form method='post' action='scriptConnexion.php' autocomplete='on'>
                     <div id='Se connecter' class='md-form mb-5'>
-                        <input type='email' id='email' name='email' class='form-control validate'>
+                        <input type='email' id='email' name='Adresse_email' class='form-control validate'>
                         <label data-error='wrong' required='required' data-success='right' for='email'>Email</label>
                     </div>
                     <div class='md-form pb-3'>
-                        <input type='password' id='password' name='Pass' class='form-control validate'>
+                        <input type='password' id='password' name='Mot_de_passe' class='form-control validate'>
                         <label data-error='wrong' data-success='right' required='required' for='password'>Mot de
                             passe</label>
                     </div>
