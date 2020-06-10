@@ -14,20 +14,19 @@ $requete->bindValue(':Pass', $p_word, PDO::PARAM_STR);
 // Exécution de la requête
 $requete->execute();
 
-$ligne = $requete->fetch();
-if (!$requete->fetch()){
-	$requete = $bdd->prepare("SELECT * FROM entreprise WHERE eMail=:email
+$requete1 = $bdd->prepare("SELECT * FROM admin WHERE eMail=:email
 	AND Mdp=:Pass");
 
-	$requete->bindValue(':email', $e_mail, PDO::PARAM_STR);
-	$requete->bindValue(':Pass', $p_word, PDO::PARAM_STR);
-	$requete->execute();
-	
-	echo "connexion réussi";
-}else if ($requete->fetch()) {
-	echo "connexion réussi";
+	$requete1->bindValue(':email', $e_mail, PDO::PARAM_STR);
+	$requete1->bindValue(':Pass', $p_word, PDO::PARAM_STR);
+	$requete1->execute();
+
+if ($requete->fetch()){
+	echo "connexion réussi entreprise";
+}else if ($requete1->fetch()) {
+	echo "connexion admin réussi";
 }else{
-	echo 'Connexion échouée';
+	echo 'T qui toi ?';
 }
 
 
