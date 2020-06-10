@@ -39,7 +39,7 @@
                         <div id="register" class="form-group">
                             <label for="usernamesignup">Nom de l'entreprise</label>
                             <input type="text" class="form-control" id="usernamesignup" maxlength="30"
-                                Name="Nom_Entreprise" placeholder="Nom de l'entreprise" required="required">
+                                Name="Nom" placeholder="Nom de l'entreprise" required="required">
                         </div>
 
 

@@ -19,25 +19,39 @@
             <div class="col-1">
                 <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
-            <div class="col-6 mt-4">
+            <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
+            <div class="col-6 mt-4"><h1>Discussion</h1></div>
+            <div class='col-2 mt-4 bd-highlight' /><a href=''id="bouton-connect" class='btn btn-default btn-rounded'>Gérer les inscriptions</a></div>
+            <?php } else {?>
+            <div class="col-8 mt-4">
                 <h1>Discussion</h1>
             </div>
-
-            <!-- Si admin -->
-            <div class='col-2 mt-4 bd-highlight' /><a href=''id="bouton-connect" class='btn btn-default btn-rounded'>Gérer les inscriptions</a></div>
-            <!-- ... -->
+            <?php } ?>
 
             <div> <?php include('boutonConnexion.php'); ?> </div>
         </div>
     </div>
+    <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
     <div id="container" class="container mt-5">
-        <h2 class="text-center">Service de messagerie</h2>
+        <h2 class="text-center">Liste de discussion</h2>
+        <div class="container">
+            
+        </div>
+    </div>
+    <?php } elseif (isset($_SESSION['status']) && $_SESSION['status'] == 1) { ?>
+    <div id="container" class="container mt-5">
+        <h2 class="text-center">Messagerie</h2>
         <div class="container">
             <h2 class="commentaire p-4">Message :</h2>
             <?php include('displayCommentaire.php')?>
             <?php include('displayAjoutCommentaire.php')?>
         </div>
     </div>
+    <?php } else {?>
+    <div id="container" class="container mt-5">
+    <h4 class="text-center p-5">Vous n'avez pas accès à la discussion ! </br> Pour y accéder veuillez vous connecter, si vous venez de vous inscrire alors vous devrez attendre qu'un admin valide votre inscription.</h4>
+    </div>
+    <?php } ?>
     <footer id="footer2">
         <?php include('footer.php'); ?>
     </footer>
