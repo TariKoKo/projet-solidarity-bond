@@ -7,7 +7,7 @@ $e_mail = isset($_POST['email']) ? $_POST['email']: NULL;
 $p_word = isset($_POST['Pass']) ? $_POST['Pass']: NULL;
 // Requête préparée pour empêcher les injections SQL
 $requete = $bdd->prepare("SELECT * FROM entreprise WHERE Adresse_email=:email
-AND motDePasse=:Pass");
+AND Mot_de_passe=:Pass");
 // Liaison des variables de la requête préparée aux variables PHP
 $requete->bindValue(':email', $e_mail, PDO::PARAM_STR);
 $requete->bindValue(':Pass', $p_word, PDO::PARAM_STR);
