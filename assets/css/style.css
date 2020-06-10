@@ -68,3 +68,12 @@ input[type=submit]:hover {
   height: 375px;
   width: 525px;
 }
+
+#dimension_contact{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
