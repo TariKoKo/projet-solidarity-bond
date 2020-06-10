@@ -25,7 +25,7 @@
             <div> <?php include('boutonConnexionBlanc.php'); ?> </div>
         </div>
     </div>
-    <div id="container" class="container mt-5 text-justify">
+    <div id="container" class="container mt-5 text-justify mb-5">
         <div class="row p-5">
             <div class="col-5">
                 <h3 class="text-center">Présentation du projet</br></h3>  
