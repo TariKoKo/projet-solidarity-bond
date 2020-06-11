@@ -1,5 +1,6 @@
-<?php session_start(); ?>
-
+<?php session_start();
+$_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +22,8 @@
                 <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
             <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
-            <div class="col-6 mt-4"><h1>Discussion</h1></div>
+            <div class="col-4 mt-4"><h1>Discussion</h1></div>
+            <div class='col-2 mt-4 bd-highlight' /><a href='discussion.php'id="bouton-connect" class='btn btn-default btn-rounded'>Liste des Discussions</a></div>
             <div class='col-2 mt-4 bd-highlight' /><a href='GérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Gérer les inscriptions</a></div>
             <?php } else {?>
             <div class="col-8 mt-4">
@@ -32,18 +34,24 @@
             <div> <?php include('boutonConnexion.php'); ?> </div>
         </div>
     </div>
-    <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
-    <div id="container" class="container mt-5">
-        <h2 class="text-center">Liste de discussions</h2>
-        <div class="container">
-            <?php include('listeDiscussion.php') ?>
+    <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ 
+    echo '<div id="container" class="container mt-5">
+        <h2 class="text-center">Chat : '.$_GET['Nom'].'</h2>' ?>
+        <div class="container-fluid">
+            <form method="post" action="conversation.php" autocomplete="off">
+            <input class="newcomment" name="texte" type="text" placeholder="Ecrire un message" required="required"/>
+            <input type='submit' value='Envoyer'class='btn blue-gradient btn-block btn-rounded z-depth-1a'>
+            </form>
         </div>
     </div>
     <?php } elseif (isset($_SESSION['status']) && $_SESSION['status'] == 1) { ?>
     <div id="container" class="container mt-5">
-        <h2 class="text-center">Discussion</h2>
-        <div class="container">
-            <?php include('listeDiscussion.php') ?>
+        <h2 class="text-center">Messagerie</h2>
+        <div class="container-fluid">
+            <form method="post" action="conversation.php" autocomplete="off">
+            <input class="newcomment" name="texte" type="text" placeholder="Ecrire un message" required="required"/>
+            <input type='submit' value='Envoyer'class='btn blue-gradient btn-block btn-rounded z-depth-1a'>
+            </form>
         </div>
     </div>
     <?php } else {?>
