@@ -39,7 +39,7 @@
                         <div id="register" class="form-group">
                             <label for="usernamesignup">Nom de l'entreprise</label>
                             <input type="text" class="form-control" id="usernamesignup" maxlength="30"
-                                Name="nom" placeholder="Nom de l'entreprise">
+                                Name="Nom" placeholder="Nom de l'entreprise" required="required">
                         </div>
 
 
@@ -47,24 +47,24 @@
 
                         <div id="register" class="form-group">
                             <label for="Phonenumber">Numéro de téléphone</label>
-                            <input type="number" class="form-control" id="numéro" name="tel" maxlength="10"
-                                placeholder="Numéro de téléphone">
+                            <input type="number" class="form-control" id="numéro" name="Numero_tel" maxlength="10"
+                                placeholder="Numéro de téléphone" required="required">
                         </div>
 
                         <!-- création Bouton adresse mail -->
 
                         <div id=register class="form-group">
                             <label for="Inputemail">Adresse email</label>
-                            <input type="email" class="form-control" id="InputEmail" Name="email"
-                                placeholder="votreadresse@exemple.com">
+                            <input type="email" class="form-control" id="InputEmail" name="Adresse_email"
+                                placeholder="votreadresse@exemple.com" required="required">
                         </div>
 
                         <!-- création Bouton Mot de passe -->
 
                         <div id="register" class="form-group">
                             <label for="passwordsignup">Mot de passe</label>
-                            <input type="password" class="form-control" id="passwordsignup" name="Pass"
-                                maxlength="12" placeholder="Mot de passe">
+                            <input type="password" class="form-control" id="passwordsignup" name="Mot_de_passe"
+                                maxlength="12" placeholder="Mot de passe" required="required">
                             <small id="emailHelp" class="form-text text-muted">Mettre au minimum une majuscule et un
                                 chiffre
                             </small>

@@ -1,3 +1,6 @@
+<?php
+                    if (!isset($_SESSION['pseudo'])){
+                         ?>
 <div class='col-2 mt-4 bd-highlight' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded'
     data-toggle='modal' data-target='#elegantModalForm'>Connexion</a></div>
 <div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'
@@ -18,11 +21,11 @@
                 <!--Body-->
                 <form method='post' action='scriptConnexion.php' autocomplete='on'>
                     <div id='Se connecter' class='md-form mb-5'>
-                        <input type='email' id='email' name='email' class='form-control validate'>
+                        <input type='email' id='email' name='Adresse_email' class='form-control validate'>
                         <label data-error='wrong' required='required' data-success='right' for='email'>Email</label>
                     </div>
                     <div class='md-form pb-3'>
-                        <input type='password' id='password' name='Pass' class='form-control validate'>
+                        <input type='password' id='password' name='Mot_de_passe' class='form-control validate'>
                         <label data-error='wrong' data-success='right' required='required' for='password'>Mot de
                             passe</label>
                     </div>
@@ -38,5 +41,9 @@
                         href='inscription.php' class='blue-text ml-1'>S'inscrire</a></p>
             </div>
         </div>
-    </div>
+    </div><?php
+                     } else {
+                            echo '<div id="nom_entreprise" class="mt-4 bd-highlight"/>'.$_SESSION['pseudo'].'</div><div class="bd-highlight"/><a href="Deconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded">Deconnexion</a></div>';
+                     }
+                     ?>
 </div>
