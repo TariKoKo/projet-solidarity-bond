@@ -48,9 +48,13 @@ if($ligne){
 		header('Location: index.php');
 		exit();
 	}
-	elseif ($ligne['Inscrit'] === '0')
+	elseif ($ligne['Status'] === '0')
 	{
-		echo "En attente d'acceptation de la demande d'inscription";
+		session_start();
+		$_SESSION['pseudo'] = $pseudo;
+		$_SESSION['id'] = $id;
+		$_SESSION['status'] = $status;
+		header('Location: index.php');
 		exit();
 	}
 }
@@ -59,5 +63,5 @@ else{
 		exit();
 }
 //Fermeture de la connexion
-$requete1->closeCursor();
+$requete->closeCursor();
 ?>
