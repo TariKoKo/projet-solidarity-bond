@@ -8,7 +8,6 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -35,28 +34,38 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
         </div>
     </div>
     <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ 
-    echo '<div id="container" class="container mt-5">
-        <h2 class="text-center">Chat : '.$_GET['Nom'].'</h2>' ?>
-        <div class="container-fluid">
-            <form method="post" action="conversation.php" autocomplete="off">
-            <input class="newcomment" name="texte" type="text" placeholder="Ecrire un message" required="required"/>
-            <input type='submit' value='Envoyer'class='btn blue-gradient btn-block btn-rounded z-depth-1a'>
-            </form>
+    echo '<div id="container" class="container mt-5 pb-5">
+            <h2 class="text-center">Chat : '.$_GET['Nom'].'</h2>' ?>
+            <div class="container">
+                <div class="container scroll_chat"><?php include('afficherMessage.php'); ?></div>
+                <form method="post" action="conversation.php" autocomplete="off">
+                    <div class="container p-5">
+                        <div class="row">
+                            <input class="newcomment text-center col-10" name="texte" type="text" placeholder="Ecrire un message" required="required"/>
+                            <input type='submit' value='Envoyer'class='btn blue-gradient btn-rounded z-depth-1a col-2'>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
     <?php } elseif (isset($_SESSION['status']) && $_SESSION['status'] == 1) { ?>
-    <div id="container" class="container mt-5">
+    <div id="container" class="container mt-5 pb-5">
         <h2 class="text-center">Messagerie</h2>
-        <div class="container-fluid">
+        <div class="container">
+            <div class="container scroll_chat"><?php include('afficherMessage.php'); ?></div>
             <form method="post" action="conversation.php" autocomplete="off">
-            <input class="newcomment" name="texte" type="text" placeholder="Ecrire un message" required="required"/>
-            <input type='submit' value='Envoyer'class='btn blue-gradient btn-block btn-rounded z-depth-1a'>
-            </form>
+                    <div class="container p-5">
+                        <div class="row">
+                            <input class="newcomment text-center col-10" name="texte" type="text" placeholder="Ecrire un message" required="required"/>
+                            <input type='submit' value='Envoyer'class='btn blue-gradient btn-rounded z-depth-1a col-2'>
+                        </div>
+                    </div>
+                </form>
         </div>
     </div>
     <?php } else {?>
     <div id="container" class="container mt-5">
-    <h4 class="text-center p-5">Vous n'avez pas accès à la discussion ! </br> Pour y accéder veuillez vous connecter, si vous venez de vous inscrire alors vous devrez attendre qu'un admin valide votre inscription.</h4>
+        <h4 class="text-center p-5">Vous n'avez pas accès à la discussion ! </br> Pour y accéder veuillez vous connecter, si vous venez de vous inscrire alors vous devrez attendre qu'un admin valide votre inscription.</h4>
     </div>
     <?php } ?>
     <footer id="footer2">
