@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discussion</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -35,14 +34,14 @@
     <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
     <div id="container" class="container mt-5">
         <h2 class="text-center">Liste de discussions</h2>
-        <div class="container">
+        <div class="container pb-3">
             <?php include('listeDiscussion.php') ?>
         </div>
     </div>
     <?php } elseif (isset($_SESSION['status']) && $_SESSION['status'] == 1) { ?>
     <div id="container" class="container mt-5">
         <h2 class="text-center">Discussion</h2>
-        <div class="container">
+        <div class="container p-5">
             <?php include('listeDiscussion.php') ?>
         </div>
     </div>
