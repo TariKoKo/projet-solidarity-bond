@@ -74,11 +74,13 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#contact{
+
+#contact {
   background-color: #C0C0C0;
 }
-#cgu{
-  background-color:#C0C0C0;
+
+#cgu {
+  background-color: #C0C0C0;
 }
 
 h1 {
@@ -135,8 +137,7 @@ input[type=submit]:hover {
   font-weight: bold;
 }
 
-#nom_entreprise
-{
+#nom_entreprise {
   font-size: 20px;
   text-align: center;
 }
@@ -160,7 +161,7 @@ input[type=submit]:hover {
   width: 525px;
 }
 
-#dimension_contact{
+#dimension_contact {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -211,10 +212,10 @@ input[type=submit]:hover {
   width: 100%;
 }
 
-.scroll_chat{
+.scroll_chat {
   width: 200px;
   height: 445px;
   border: 1px black;
-  overflow-y:scroll;
+  overflow-y: scroll;
   padding-bottom: 1em;
 }

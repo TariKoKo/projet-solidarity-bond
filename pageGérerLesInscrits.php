@@ -17,16 +17,22 @@
             <div class="col-1">
                 <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
-            <div class="col-3 mt-4"><h1>Admin</h1></div>
-            <div class="col-3 mt-4 bd-highlight"/><a href='pageDiscussion.php'id="bouton-connect" class='btn btn-default btn-rounded'>Retour aux Discussions</a></div>
-            <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Liste des Inscriptions</a></div>
-            <div> <?php include('displayBoutonConnexion.php'); ?> </div>
+            <div class="col-3 mt-4">
+                <h1>Admin</h1>
+            </div>
+            <div class="col-3 mt-4 bd-highlight" /><a href='pageDiscussion.php' id="bouton-connect"
+                class='btn btn-default btn-rounded'>Retour aux Discussions</a>
         </div>
+        <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php' id="bouton-connect"
+            class='btn btn-default btn-rounded'>Liste des Inscriptions</a>
+    </div>
+    <div> <?php include('displayBoutonConnexion.php'); ?> </div>
+    </div>
     </div>
     <div id="container" class="container mt-5 pb-5 text-center">
         <h2 class="text-center mb-5">Inscrits</h2>
         <div class="container">
-         <?php include('displayInscrit.php') ?>   
+            <?php include('displayInscrit.php') ?>
         </div>
     </div>
     <footer id="footer2">
