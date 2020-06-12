@@ -37,8 +37,8 @@
                     <form method="post" action="scriptInscription.php" autocomplete="on">
                         <div id="register" class="form-group">
                             <label for="usernamesignup">Nom de l'entreprise</label>
-                            <input type="text" class="form-control" id="usernamesignup" maxlength="30"
-                                Name="Nom" placeholder="Nom de l'entreprise" required="required">
+                            <input type="text" class="form-control" id="usernamesignup" maxlength="30" Name="Nom"
+                                placeholder="Nom de l'entreprise" required="required">
                         </div>
 
 

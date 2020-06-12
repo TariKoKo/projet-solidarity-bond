@@ -20,16 +20,20 @@
                 <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
             <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
-            <div class="col-6 mt-4"><h1>Discussion</h1></div>
-            <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Gérer les inscriptions</a></div>
-            <?php } else {?>
-            <div class="col-8 mt-4">
+            <div class="col-6 mt-4">
                 <h1>Discussion</h1>
             </div>
-            <?php } ?>
-
-            <div> <?php include('displayBoutonConnexion.php'); ?> </div>
+            <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php' id="bouton-connect"
+                class='btn btn-default btn-rounded'>Gérer les inscriptions</a>
         </div>
+        <?php } else {?>
+        <div class="col-8 mt-4">
+            <h1>Discussion</h1>
+        </div>
+        <?php } ?>
+
+        <div> <?php include('displayBoutonConnexion.php'); ?> </div>
+    </div>
     </div>
     <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
     <div id="container" class="container mt-5">
@@ -47,7 +51,9 @@
     </div>
     <?php } else {?>
     <div id="container" class="container mt-5">
-    <h4 class="text-center p-5">Vous n'avez pas accès à la discussion ! </br> Pour y accéder veuillez vous connecter, si vous venez de vous inscrire alors vous devrez attendre qu'un admin valide votre inscription.</h4>
+        <h4 class="text-center p-5">Vous n'avez pas accès à la discussion ! </br> Pour y accéder veuillez vous
+            connecter, si vous venez de vous inscrire alors vous devrez attendre qu'un admin valide votre inscription.
+        </h4>
     </div>
     <?php } ?>
     <footer id="footer2">
