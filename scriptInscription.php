@@ -1,6 +1,6 @@
 <?php
 
-include('bdd.php');
+include('scriptBDD.php');
 
     // Récupération des données utilisateurs
         $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;
@@ -33,7 +33,7 @@ else
         $requete->bindValue(':Mot_de_passe', $Mot_de_passe, PDO::PARAM_STR);
     // Exécution de la requête 
         $requete->execute();
-        header('Location: index.php');
+        header('Location: pageIndex.php');
         exit();
     }
     else {

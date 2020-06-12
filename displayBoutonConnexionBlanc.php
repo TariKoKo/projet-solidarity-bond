@@ -1,7 +1,7 @@
 <?php
-                    if (!isset($_SESSION['pseudo'])){
+                     if (!isset($_SESSION['pseudo'])){
                          ?>
-<div class='col-2 mt-4 bd-highlight' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded'
+<div class='col-2 mt-4 bd-highlight' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded text-white'
     data-toggle='modal' data-target='#elegantModalForm'>Connexion</a></div>
 <div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'
     aria-hidden='true'>
@@ -38,12 +38,12 @@
             <!--Footer-->
             <div class='modal-footer mx-5 pt-3 mb-1'>
                 <p class='font-small grey-text d-flex justify-content-end'>Vous n'avez pas de comtpe? <a
-                        href='inscription.php' class='blue-text ml-1'>S'inscrire</a></p>
+                        href='scriptInscription.php' class='blue-text ml-1'>S'inscrire</a></p>
             </div>
         </div>
     </div><?php
-                     } else {
-                            echo '<div id="nom_entreprise" class="mt-4 bd-highlight"/>'.$_SESSION['pseudo'].'</div><div class="bd-highlight"/><a href="Deconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded">Deconnexion</a></div>';
+                    }else {
+                        echo '<div id="nom_entreprise" class="mt-4 bd-highlight text-white"/>'.$_SESSION['pseudo'].'</div><div class="bd-highlight"/><a href="scriptDeconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded text-white">Deconnexion</a></div>';
                      }
                      ?>
 </div>

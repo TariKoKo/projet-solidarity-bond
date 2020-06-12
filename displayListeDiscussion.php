@@ -1,5 +1,5 @@
 <?php
-include('bdd.php');
+include('scriptBDD.php');
 if(isset($_SESSION['status']) && $_SESSION['status'] == 2){
 
 $requete = $bdd->prepare("SELECT * FROM utilisateur JOIN discussion ON utilisateur.ID_Utilisateur = discussion.ID_Utilisateur WHERE status = 1");
@@ -13,7 +13,7 @@ while($ligne=$requete->fetch()){
         			<p>'.$ligne['Nom']. '</p>
         		</div>
                 <div class="col-4">' .$ligne['Adresse_email']. '</div>
-                <div class="col-4"/><a href="chat.php?ID_Utilisateur=' .$ligne['ID_Utilisateur']. '&amp;Nom= '.$ligne['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
+                <div class="col-4"/><a href="pageChat.php?ID_Utilisateur=' .$ligne['ID_Utilisateur']. '&amp;Nom= '.$ligne['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
         			 
         		</div>
         </div>
@@ -33,7 +33,7 @@ while($ligne1=$requete1->fetch()){
                     <p>'.$ligne1['Nom']. '</p>
                 </div>
                 <div class="col-4">' .$ligne1['Adresse_email']. '</div>
-                <div class="col-4"/><a href="chat.php?ID_Utilisateur=' .$ligne1['ID_Utilisateur']. '&amp;Nom= '.$ligne1['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
+                <div class="col-4"/><a href="pageChat.php?ID_Utilisateur=' .$ligne1['ID_Utilisateur']. '&amp;Nom= '.$ligne1['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
                      
                 </div>
         </div>

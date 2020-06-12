@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Inscription</title>
+    <title>Admin</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -15,12 +15,12 @@
             <div class="col-1">
             </div>
             <div class="col-1">
-                <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+                <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
             <div class="col-3 mt-4"><h1>Admin</h1></div>
-            <div class="col-3 mt-4 bd-highlight"/><a href='discussion.php'id="bouton-connect" class='btn btn-default btn-rounded'>Retour aux Discussions</a></div>
-            <div class='col-2 mt-4 bd-highlight' /><a href='GérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Liste des Inscriptions</a></div>
-            <div> <?php include('boutonConnexion.php'); ?> </div>
+            <div class="col-3 mt-4 bd-highlight"/><a href='pageDiscussion.php'id="bouton-connect" class='btn btn-default btn-rounded'>Retour aux Discussions</a></div>
+            <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Liste des Inscriptions</a></div>
+            <div> <?php include('displayBoutonConnexion.php'); ?> </div>
         </div>
     </div>
     <div id="container" class="container mt-5 pb-5 text-center">
@@ -30,7 +30,7 @@
         </div>
     </div>
     <footer id="footer2">
-        <?php include('footer.php'); ?>
+        <?php include('displayFooter.php'); ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"

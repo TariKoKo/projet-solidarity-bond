@@ -1,6 +1,6 @@
 <?php  
 
-include('bdd.php');
+include('scriptBDD.php');
 
 $requete = $bdd->prepare("UPDATE utilisateur SET Status = 0 WHERE ID_Utilisateur = :ID_Utilisateur");
 $requete->bindValue(':ID_Utilisateur', $_GET['ID_Utilisateur'], PDO::PARAM_STR);
@@ -13,6 +13,6 @@ $requete1->bindValue(':ID_Utilisateur', $_GET['ID_Utilisateur'], PDO::PARAM_STR)
 $requete1->execute();  
 $requete1->closeCursor();
 
-header('Location: GérerLesInscrits.php');
+header('Location: pageGérerLesInscrits.php');
 exit()	
 ?>

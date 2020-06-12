@@ -5,40 +5,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Admin</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body id="index">
+<body id="discussion">
     <div class="container-fluid">
         <div class="row mt-5">
             <div class="col-1">
             </div>
             <div class="col-1">
-                <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+                <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
-            <div class="col-8 mt-4">
-                <h1>Projet Solidarity-Bond</h1>
-            </div>
-            <div> <?php include('boutonConnexion.php'); ?> </div>
+            <div class="col-3 mt-4"><h1>Admin</h1></div>
+            <div class="col-3 mt-4 bd-highlight"/><a href='pageDiscussion.php'id="bouton-connect" class='btn btn-default btn-rounded'>Retour aux Discussions</a></div>
+            <div class='col-2 mt-4 bd-highlight'/><a href='pageGérerLesInscrits.php'id="bouton-connect" class='btn btn-default btn-rounded'>Liste des Inscrits</a></div>
+            <div> <?php include('displayBoutonConnexion.php'); ?> </div>
         </div>
     </div>
-    <div class="container-fluid mt-5"></br></div>
-    <div class="container-fluid mt-5">
-        <div class="row text-center">
-            <div class="col-4 mt-5">
-                <a id="text_logo" href="projet.php"><img src="assets/image/Logo_projet.png">Notre projet</a>
-            </div>
-            <div class="col-4 mt-5">
-                <a id="text_logo" href="solution.php"><img src="assets/image/Logo_solution.png">Notre solution</a>
-            </div>
-            <div class="col-4 mt-5">
-                <a id="text_logo" href="discussion.php"><img src="assets/image/Logo_discussion.png">Discussion</a>
-            </div>
+    <div id="container" class="container mt-5 pb-5 text-center">
+        <h2 class="text-center mb-5">Inscriptions en attente</h2>
+        <div class="container">
+         <?php include('displayInscription.php') ?>   
         </div>
     </div>
     <footer id="footer2">
-        <?php include('footer.php'); ?>
+        <?php include('displayFooter.php'); ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
