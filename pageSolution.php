@@ -16,12 +16,12 @@
 
             </div>
             <div class="col-1">
-                <a href="index.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
+                <a href="pageIndex.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
             </div>
             <div class="col-8 mt-4">
                 <h1 class="text-white">Notre Solution</h1>
             </div>
-            <div> <?php include('boutonConnexionBlanc.php'); ?> </div>
+            <div> <?php include('displayBoutonConnexionBlanc.php'); ?> </div>
         </div>
     </div>
     <div id="container" class="container mt-5 text-justify">
@@ -49,7 +49,7 @@
             L'ABS demande une température de 200 à 250°C pour fondre. Il lui faut aussi un plateau chauffant pour éviter qu'il ne se rétracte en refroidissant. Il existe en plusieurs couleurs et peut se trouver sous forme de bobines de filament ou sous forme de polymère liquide pour le procédé SLA.</p>
     </div>
     <footer>
-        <?php include('footer.php'); ?>
+        <?php include('displayFooter.php'); ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"

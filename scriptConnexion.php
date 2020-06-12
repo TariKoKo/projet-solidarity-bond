@@ -3,7 +3,7 @@ session_start();
 var_dump($_POST);
 
 // Adapter dbname et mot de passe si besoin
-include('bdd.php');
+include('scriptBDD.php');
 
 // Récupération des données utilisateurs
 $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;
@@ -36,7 +36,7 @@ if($ligne){
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
 		$_SESSION['status'] = $status;
-		header('Location: index.php');
+		header('Location: pageIndex.php');
 		exit();
 	}   
 	elseif ($ligne['Status'] === '1')
@@ -45,7 +45,7 @@ if($ligne){
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
 		$_SESSION['status'] = $status;
-		header('Location: index.php');
+		header('Location: pageIndex.php');
 		exit();
 	}
 	elseif ($ligne['Status'] === '0')
@@ -54,12 +54,12 @@ if($ligne){
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
 		$_SESSION['status'] = $status;
-		header('Location: index.php');
+		header('Location: pageIndex.php');
 		exit();
 	}
 }
 else{
-		header('Location: inscription.php');		
+		header('Location: pageInscription.php');		
 		exit();
 }
 //Fermeture de la connexion

@@ -1,6 +1,6 @@
 <?php  
 
-include('bdd.php');
+include('scriptBDD.php');
 
 $requete = $bdd->prepare("UPDATE utilisateur SET Status = 1 WHERE ID_Utilisateur = :ID_Utilisateur");
 $requete->bindValue(':ID_Utilisateur', $_GET['ID_Utilisateur'], PDO::PARAM_STR);
@@ -14,7 +14,7 @@ $requete1->execute();
 $requete1->closeCursor();
 
 
-header('Location: GérerLesDiscussions.php');
+header('Location: pageGérerLesDiscussions.php');
 exit()
 
 

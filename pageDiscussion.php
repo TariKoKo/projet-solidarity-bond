@@ -17,32 +17,32 @@
 
             </div>
             <div class="col-1">
-                <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+                <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
             </div>
             <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
             <div class="col-6 mt-4"><h1>Discussion</h1></div>
-            <div class='col-2 mt-4 bd-highlight' /><a href='GérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Gérer les inscriptions</a></div>
+            <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php'id="bouton-connect" class='btn btn-default btn-rounded'>Gérer les inscriptions</a></div>
             <?php } else {?>
             <div class="col-8 mt-4">
                 <h1>Discussion</h1>
             </div>
             <?php } ?>
 
-            <div> <?php include('boutonConnexion.php'); ?> </div>
+            <div> <?php include('displayBoutonConnexion.php'); ?> </div>
         </div>
     </div>
     <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
     <div id="container" class="container mt-5">
-        <h2 class="text-center">Liste de discussions</h2>
+        <h2 class="text-center p-3">Liste de discussions</h2>
         <div class="container pb-3">
-            <?php include('listeDiscussion.php') ?>
+            <?php include('displayListeDiscussion.php') ?>
         </div>
     </div>
     <?php } elseif (isset($_SESSION['status']) && $_SESSION['status'] == 1) { ?>
     <div id="container" class="container mt-5">
         <h2 class="text-center">Discussion</h2>
         <div class="container p-5">
-            <?php include('listeDiscussion.php') ?>
+            <?php include('displayListeDiscussion.php') ?>
         </div>
     </div>
     <?php } else {?>
@@ -51,7 +51,7 @@
     </div>
     <?php } ?>
     <footer id="footer2">
-        <?php include('footer.php'); ?>
+        <?php include('displayFooter.php'); ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"

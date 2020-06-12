@@ -16,12 +16,12 @@
 
             </div>
             <div class="col-1">
-                <a href="index.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
+                <a href="pageIndex.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
             </div>
             <div class="col-8 mt-4">
                 <h1 class="text-white">Notre Projet</h1>
             </div>
-            <div> <?php include('boutonConnexionBlanc.php'); ?> </div>
+            <div> <?php include('displayBoutonConnexionBlanc.php'); ?> </div>
         </div>
     </div>
     <div id="container" class="container mt-5 text-justify mb-5">
@@ -49,7 +49,7 @@
         <img class="pb-4" id="crochet" src="assets/image/coronavirus.jpg">
     </div>
     <footer>
-        <?php include('footer.php'); ?>
+        <?php include('displayFooter.php'); ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"

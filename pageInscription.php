@@ -17,7 +17,7 @@
 
                 </div>
                 <div class="col-1">
-                    <a href="index.php"><img src="assets/image/Logo_cesi.png"></a>
+                    <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
                 </div>
                 <div class="col-9 mt-4">
                     <h1>Projet Solidarity-Bond</h1>
@@ -73,7 +73,7 @@
                             <input type="checkbox" name="cgu" class="form-check-input" id="exampleCheck1"
                                 required="required">
                             <label class="form-check-label" for="exampleCheck1">Cliquer ici pour accepter les <a
-                                    href="mentionslégales.php">mentions légales</a> </label>
+                                    href="pageCGU.php">Conditions Générales d'Utilisation</a> </label>
                         </div>
 
                         <!-- Bouton pour créer son compte-->
@@ -87,7 +87,7 @@
         </div>
     </main>
     <footer id="footer2">
-        <?php include 'footer.php' ?>
+        <?php include 'displayFooter.php' ?>
     </footer>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"

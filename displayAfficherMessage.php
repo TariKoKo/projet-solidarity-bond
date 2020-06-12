@@ -1,5 +1,5 @@
 <?php 
-include('bdd.php');
+include('scriptBDD.php');
 
 if(isset($_SESSION['status']) && $_SESSION['status'] == 2){
 
