@@ -1,13 +1,13 @@
-.b{
+.b {
   border: 1px red solid;
 }
 
-.navbar{
+.navbar {
   padding: 50px 100px !important;
-  background-color: rgba(255, 255, 255,0) !important;
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 
-.logo{
+.logo {
   height: 100px
 }
 
@@ -21,10 +21,16 @@ footer {
   text-align: center;
 }
 
-#footer2 {
+#footerIndex {
   position: absolute;
 }
 
+#footerPartenariat {
+  position: absolute;
+}
+#footerContact{
+  position: absolute;
+}
 #h5:hover {
   font-weight: bold;
 }
@@ -86,6 +92,8 @@ footer {
   background-image: url("../../assets/image/Fond-partenariat.jpg");
   background-position: 0% 0%;
   background-size: 100%;
+  min-height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -173,9 +181,8 @@ input[type=submit]:hover {
   height: 100%;
 }
 
-#photoEvenement img {
-  height: 375px;
-  width: 525px;
+#photoPartenaire img {
+  size: cover;
 }
 
 #dimension_contact {
@@ -237,40 +244,76 @@ input[type=submit]:hover {
   padding-bottom: 1em;
 }
 
-
-
-@media screen and (max-width: 576px){
-  .logo{
-    height: 50px;
-  }
-  .navbar{
-    padding: 10px !important;
-  }
-  h1{
-    font-size: 1.8rem;
-  }
-  #footer2 {
-    position: relative;
-  }
-  .text_logo img {
-    width: 130px;
-  } 
-}
-
-@media screen and (max-width: 991px){
-  .logo{
+@media screen and (max-width: 991px) {
+  .logo {
     height: 75px;
   }
-  .navbar{
+
+  .navbar {
     padding: 15px !important;
   }
-  h1{
-    font-size: 2rem;
+
+  h1 {
+    font-size: 3rem;
   }
-  #footer2 {
+
+  #footerIndex {
     position: relative;
   }
+  #footerContact{
+    position: relative;
+  }
+
   .text_logo img {
     width: 400px;
-  } 
+  }
+
+  #photoPartenaire img {
+    width: 200px;
+    size: cover;
+  }
+
+  .card {
+    width: 300px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    height: 50px;
+  }
+
+  .navbar {
+    padding: 10px !important;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #footerIndex {
+    position: relative;
+  }
+
+  #footerPartenariat {
+    position: relative;
+  }
+  #footerContact{
+    position: relative;
+  }
+
+  .text_logo img {
+    width: 130px;
+  }
+
+  #photoPartenaire img {
+    width: 100px;
+    size: cover;
+  }
+
+  .card {
+    width: 190px;
+    align-items: center;
+  }
 }

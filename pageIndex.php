@@ -29,7 +29,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <h1 class="ml-5 d-none d-lg-block">Projet Solidarity Bond</h1>
+    <h1 class="ml-5 d-none d-lg-block p-0">Projet Solidarity-Bond</h1>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -39,7 +39,7 @@
     </div>
     </nav>
     <div class="container-fluid mt-5">
-        <h1 class="d-lg-none text-center d-block">Projet Solidarity Bond</h1>
+        <h1 class="d-lg-none text-center d-block p-0">Projet Solidarity-Bond</h1>
         <div class="row text-center">
             <div class="col-lg-4  mt-5">
                 <a class="text_logo" href="pageProjet.php"><img src="assets/image/Logo_projet.png">Notre projet</a>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <footer id="footer2" class="mt-5 mt-lg-0">
+    <footer id="footerIndex" class="mt-5 mt-lg-0">
         <?php include('displayFooter.php'); ?>
     </footer>
 </body>
