@@ -24,6 +24,7 @@ $ligne=$requete->fetch();
 $pseudo = $ligne['Nom'];
 $id = $ligne['ID_Utilisateur'];
 $status = $ligne['Status'];
+$email = $ligne['Adresse_email'];
 
 
 if($ligne){
@@ -36,6 +37,7 @@ if($ligne){
 		$_SESSION['pseudo'] = $pseudo;
 		$_SESSION['id'] = $id;
 		$_SESSION['status'] = $status;
+		$_SESSION['email'] = $email;
 		header('Location: pageIndex.php');
 		exit();
 	}   

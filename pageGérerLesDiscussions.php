@@ -40,12 +40,14 @@
         </ul>
     </div>
     </nav>
+    <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
     <div id="container" class="container mt-5 pb-5 text-center">
         <h2 class="text-center mb-5">Inscriptions en attente</h2>
         <div class="container">
             <?php include('displayInscription.php') ?>
         </div>
     </div>
+    <?php } ?>
     <footer id="footerDiscussion">
         <?php include('displayFooter.php'); ?>
     </footer>

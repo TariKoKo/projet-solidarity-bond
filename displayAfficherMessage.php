@@ -10,14 +10,14 @@ if(isset($_SESSION['status']) && $_SESSION['status'] == 2){
 
 	while($ligne=$requete->fetch()){ 
 		
-		if ($ligne['ID_Utilisateur'] != 1) {
+		if ($ligne['ID_Utilisateur'] != 5) {
 			echo '	<div class="received_msg">
 	            		<div class="received_withd_msg">
 			                <p>'.$ligne['Texte'].'</p>
 			            </div>
 	       		</div>';
 		}
-	    elseif ($ligne['ID_Utilisateur'] = 1) {
+	    elseif ($ligne['ID_Utilisateur'] = 5) {
 	    	echo '	    <div class="outgoing_msg">
 			        <div class="sent_msg">
 			            <p>'.$ligne['Texte'].'</p>

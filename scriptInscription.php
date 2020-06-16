@@ -1,6 +1,10 @@
 <?php
 
 include('scriptBDD.php');
+use PHPMailer\PHPMailer\PHPMailer;
+require_once "vendor/PHPMailer/PHPMailer.php";
+require_once "vendor/PHPMailer/SMTP.php";
+require_once "vendor/PHPMailer/Exception.php";
 
     // Récupération des données utilisateurs
         $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;
@@ -13,10 +17,9 @@ include('scriptBDD.php');
         $requete = $bdd->prepare("SELECT * FROM utilisateur WHERE Adresse_email = :Adresse_email");
     // Liaison des variables de la requête préparée aux variables PHP
         $requete->bindValue(':Adresse_email', $Adresse_email, PDO::PARAM_STR);
-
         $requete->execute();
 
-if($requete->fetch())
+if($ligne = $requete->fetch())
 {
     // Fermeture de la connexion 
     echo "Utilsateur existe déjà" ;
@@ -33,6 +36,34 @@ else
         $requete->bindValue(':Mot_de_passe', $Mot_de_passe, PDO::PARAM_STR);
     // Exécution de la requête 
         $requete->execute();
+
+        $mail = new PHPMailer();
+
+        //SMTP settings
+        $mail->isSMTP();
+        $mail->Host = "smtp.gmail.com";
+        $mail->SMTPAuth = true;
+        $mail->Username = "solidarity.bond.cesi@gmail.com";
+        $mail->Password = "Solidarity23";
+        $mail->Port = 465; //587
+        $mail->SMTPSecure = "ssl"; //tls
+
+        //Email settings
+        $mail->isHTML(true);
+        $mail->setFrom("solidarity.bond.cesi@gmail.com", "Solidarity Bond");
+        $mail->addAddress($_POST['Adresse_email']);
+        $mail->Subject = "Demande d'inscription";
+        $mail->Body = "Bonjour,<br><br> Votre demande d'inscription à bien été prise en compte, nous allons traiter votre demande dans les plus brefs délais.<br><br> Cordialement,<br>L'équipe de Solidarity-Bond.";
+
+        if($mail->send()){
+            $response = "Mail send";
+        }
+        else{
+            $response = "Nope :" . $mail->ErrorInfo;
+        }
+
+
+
         header('Location: pageIndex.php');
         exit();
     }
