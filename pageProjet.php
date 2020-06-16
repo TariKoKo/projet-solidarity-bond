@@ -10,23 +10,26 @@
 </head>
 
 <body id="projet">
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-1">
-
-            </div>
-            <div class="col-1">
-                <a href="pageIndex.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
-            </div>
-            <div class="col-8 mt-4">
-                <h1 class="text-white">Notre Projet</h1>
-            </div>
-            <div> <?php include('displayBoutonConnexionBlanc.php'); ?> </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand row m-0" href="pageIndex.php">
+            <img class="logo" src="assets/image/Logo_cesi_blanc.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="ml-5 d-none d-lg-block p-0 text-white">Notre Projet</h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <?php include('displayBoutonConnexionBlanc.php'); ?>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
     <div id="container" class="container mt-5 text-justify mb-5">
         <div class="row p-5">
-            <div class="col-5">
+            <div class="col-lg-5">
                 <h3 class="text-center">Présentation du projet</br></h3>
                 </br>
                 <p>
@@ -49,8 +52,8 @@
                     disposition tout le matériel disponible dans celui-ci, et Nous aurons la capacité de produire des
                     solutions technologiques.</p>
             </div>
-            <div class="col-2"></div>
-            <div class="col-5">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5">
                 <h3 class="text-center">Les besoins des entreprises</br></h3>
                 </br>
                 <p>
@@ -75,7 +78,7 @@
                     regroupements inutiles. </p>
             </div>
         </div>
-        <img class="pb-4" id="crochet" src="assets/image/coronavirus.jpg">
+        <img class="pb-4 d-none d-lg-block p-0" id="crochet" src="assets/image/coronavirus.jpg">
     </div>
     <footer>
         <?php include('displayFooter.php'); ?>

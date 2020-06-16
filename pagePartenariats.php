@@ -20,7 +20,7 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <h1 class="ml-5 d-none d-lg-block">Projet Solidarity Bond</h1>
+        <h1 class="ml-5 d-none d-lg-block p-0">Projet Solidarity-Bond</h1>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -33,10 +33,10 @@
     <h1 class="d-lg-none text-center d-block">Partenariats</h1>
         <div class="container mt-4">
             <div id="photoPartenaire" class="row justify-content-center">
-                <div class="card  p-2 col-lg-5 mt-5 m-lg-auto m-md-auto mt-lg-0">
+                <div class="card1 card  p-2 col-lg-5 mt-5 m-lg-auto m-md-auto mt-lg-0">
                     <img class="card-img-top" src="assets/image/carrefour.png" alt="carrefour">
                 </div>
-                <div class="card  p-2 col-lg-5 mt-5 m-lg-auto m-md-auto mt-lg-0">
+                <div class="card1 card  p-2 col-lg-5 mt-5 m-lg-auto m-md-auto mt-lg-0">
                     <img class="card-img-top" src="assets/image/leclerc.png" alt="leclerc">
                 </div>
             </div>

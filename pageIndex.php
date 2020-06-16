@@ -11,19 +11,8 @@
 </head>
 
 <body id="index">
-    <!-- <div class="container-fluid">
-        <nav>
-            <div class="row justify-content-between m-0 align-items-center">
-                <div class="row m-0 align-items-center">
-                    <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
-                    <h1 class="ml-5">Projet Solidarity Bond</h1>
-                </div>
-                
-            </div>
-        </nav>
-    </div> -->
     <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand row m-0">
+    <a class="navbar-brand row m-0" href="pageIndex.php">
             <img class="logo" src="assets/image/Logo_cesi.png">
         </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

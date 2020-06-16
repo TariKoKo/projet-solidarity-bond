@@ -6,14 +6,14 @@ $requete = $bdd->prepare("SELECT * FROM utilisateur JOIN discussion ON utilisate
 $requete->execute();  
 
 while($ligne=$requete->fetch()){ 
-    echo '<div class="card mb-2">
+    echo '<div class="card2 card mb-2">
         <div class="container card p-4">
         	<div class="row">
-        		<div class="col-4">
+        		<div class="col-sm-4 text-center">
         			<p>'.$ligne['Nom']. '</p>
         		</div>
-                <div class="col-4">' .$ligne['Adresse_email']. '</div>
-                <div class="col-4"/><a href="pageChat.php?ID_Utilisateur=' .$ligne['ID_Utilisateur']. '&amp;Nom= '.$ligne['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
+                <div class="col-sm-4 text-center">' .$ligne['Adresse_email']. '</div>
+                <div class="col-sm-4 text-center"/><a href="pageChat.php?ID_Utilisateur=' .$ligne['ID_Utilisateur']. '&amp;Nom= '.$ligne['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
         			 
         		</div>
         </div>
@@ -26,14 +26,14 @@ $requete1 = $bdd->prepare("SELECT * FROM utilisateur WHERE status = 2");
 $requete1->execute();  
 
 while($ligne1=$requete1->fetch()){ 
-    echo '<div class="card mb-2">
+    echo '<div class="card2 card mb-2">
         <div class="container card p-4">
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-4 text-center">
                     <p>'.$ligne1['Nom']. '</p>
                 </div>
-                <div class="col-4">' .$ligne1['Adresse_email']. '</div>
-                <div class="col-4"/><a href="pageChat.php?ID_Utilisateur=' .$ligne1['ID_Utilisateur']. '&amp;Nom= '.$ligne1['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
+                <div class="col-sm-4 text-center">' .$ligne1['Adresse_email']. '</div>
+                <div class="col-sm-4 text-center"/><a href="pageChat.php?ID_Utilisateur=' .$ligne1['ID_Utilisateur']. '&amp;Nom= '.$ligne1['Nom'].'" class="btn btn-default btn-rounded">Accéder à la discussion</a></div>
                      
                 </div>
         </div>

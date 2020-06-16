@@ -10,23 +10,26 @@
 </head>
 
 <body id="solution">
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-1">
-
-            </div>
-            <div class="col-1">
-                <a href="pageIndex.php"><img src="assets/image/Logo_cesi_blanc.png"></a>
-            </div>
-            <div class="col-8 mt-4">
-                <h1 class="text-white">Notre Solution</h1>
-            </div>
-            <div> <?php include('displayBoutonConnexionBlanc.php'); ?> </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand row m-0" href="pageIndex.php">
+            <img class="logo" src="assets/image/Logo_cesi_blanc.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="ml-5 d-none d-lg-block p-0 text-white">Notre Solution</h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <?php include('displayBoutonConnexionBlanc.php'); ?>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
     <div id="container" class="container mt-5 text-justify">
-        <div class="row p-5">
-            <div class="col-3 pl-4">
+        <div class="row p-sm-5 p-2">
+            <div class="col-lg-3 pl-4">
                 <h3>Caractéristiques : </br></br></h3>
                 <p> 
                 • Facile à transporter partout </br></br>
@@ -34,13 +37,13 @@
                 • Peut appuyer sur les boutons d'ascenseur, et tous les autres contacts quotidiens </br></br>
                 • Peut servir de porte-clés sans risque de contaminer les autres clefs</p>
             </div>
-            <div class="col-1"></div>
-            <div class="col-8">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-8">
                 <img id="crochet" src="assets/image/Crochet.png">
             </div>
         </div>
         <img id="crochet2" src="assets/image/CrochetAmélioré.png">
-        <p class="p-5">
+        <p class="p-sm-5 p-2">
             Hauteur : 5.00 mm </br></br>
             Tous les Fillets (soudure d’angle sur tous les côtés) : Radius = 0.50 mm ; Diamètre = 1.00 mm  </br>
             Fabrication : Imprimante 3D  </br></br>

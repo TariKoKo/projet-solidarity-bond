@@ -10,26 +10,28 @@
 </head>
 
 <body id="inscription">
-    <header>
-        <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-1">
-
-                </div>
-                <div class="col-1">
-                    <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
-                </div>
-                <div class="col-9 mt-4">
-                    <h1>Projet Solidarity-Bond</h1>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand row m-0" href="pageIndex.php">
+            <img class="logo" src="assets/image/Logo_cesi.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h1 class="ml-5 d-none d-lg-block p-0">Projet Solidarity-Bond</h1>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <?php include('displayBoutonConnexion.php'); ?>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4 couleur-inscription">
+                <div class="col-lg-4 col-sm-3"></div>
+                <div class="col-lg-4 col-sm-6 couleur-inscription">
                     <h4 class="card-title mt-3 text-center">Créer son compte</h4>
 
                     <!-- création bouton nom de l'entreprise-->
@@ -82,11 +84,11 @@
                         </p>
                     </form>
                 </div>
-                <div class="col-4"></div>
+                <div class="col-lg-4 col-sm-3"></div>
             </div>
         </div>
     </main>
-    <footer id="footer2">
+    <footer id="footerInscription" class="mt-5 mt-lg-0">
         <?php include 'displayFooter.php' ?>
     </footer>
 </body>

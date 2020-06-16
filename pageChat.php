@@ -12,33 +12,36 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
 </head>
 
 <body id="discussion">
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-1">
-
-            </div>
-            <div class="col-1">
-                <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand row m-0" href="pageIndex.php">
+            <img class="logo" src="assets/image/Logo_cesi.png">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <h1 class="ml-5 d-none d-lg-block p-0">Discussion</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <li class=" nav-item p-0 col-lg-4">
             <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
-            <div class="col-4 mt-4">
-                <h1>Discussion</h1>
-            </div>
-            <div class='col-2 mt-4 bd-highlight' /><a href='pageDiscussion.php' id="bouton-connect"
+            <div class="mt-lg-4 mt-0 bd-highlight text-center" /><a href='pageDiscussion.php' id="bouton-connect"
                 class='btn btn-default btn-rounded'>Liste des Discussions</a>
-        </div>
-        <div class='col-2 mt-4 bd-highlight' /><a href='pageGérerLesDiscussions.php' id="bouton-connect"
+            </div>
+            <?php } ?>
+        </li>
+        <li class="nav-item p-0 col-lg-4">
+            <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
+            <div class='mt-lg-4 mt-0 bd-highlight text-center' /><a href='pageGérerLesDiscussions.php' id="bouton-connect"
             class='btn btn-default btn-rounded'>Gérer les inscriptions</a>
+            </div>
+            <?php } ?>
+        </li>
+        <li class="nav-item">
+            <?php include('displayBoutonConnexion.php'); ?>
+        </li>
+        </ul>
     </div>
-    <?php } else {?>
-    <div class="col-8 mt-4">
-        <h1>Discussion</h1>
-    </div>
-    <?php } ?>
-
-    <div> <?php include('displayBoutonConnexion.php'); ?> </div>
-    </div>
-    </div>
+    </nav>
     <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ 
     echo '<div id="container" class="container mt-5 pb-5">
             <h2 class="text-center p-3">Chat : '.$_GET['Nom'].'</h2>' ?>
@@ -78,7 +81,7 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
         </h4>
     </div>
     <?php } ?>
-    <footer id="footer2">
+    <footer id="footerDiscussion">
         <?php include('displayFooter.php'); ?>
     </footer>
 </body>
