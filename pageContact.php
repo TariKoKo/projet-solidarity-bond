@@ -12,25 +12,27 @@
 </head>
 
 <body id="contact">
-    <header>
-        <div class="container-fluid">
-            <div class="row mt-5">
-                <div class="col-1">
-                </div>
-                <div class="col-1">
-                    <a href="pageIndex.php"><img src="assets/image/Logo_cesi.png"></a>
-                </div>
-                <div class="col-8 mt-4">
-                    <h1>Projet Solidarity-Bond</h1>
-                </div>
-                <div> <?php include('displayBoutonConnexion.php'); ?> </div>
-            </div>
-        </div>
-    </header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand row m-0" href="pageIndex.php">
+            <img class="logo" src="assets/image/Logo_cesi.png">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <h1 class="ml-5 d-none d-lg-block p-0">Projet Solidarity-Bond</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <?php include('displayBoutonConnexion.php'); ?>
+        </li>
+        </ul>
+    </div>
+    </nav>
     <main>
+        <h1 class="d-lg-none text-center d-block">Contacts</h1>
         <div class="container-fluid mt-5">
             <div class="row">
-                <div class="col-sm mt-5">
+                <div class="col-lg-4 mt-5">
                     <img src="assets/image/contact_pierre.jpg" class="card-img-top" id="dimension_contact" alt="Pierre">
                     <div class="card-body text-center">
                         <p>Collaborateur</p>
@@ -38,7 +40,7 @@
                         <p class="card-text">pierre.leguidevais@viacesi.fr</br>07.78.70.11.97</p>
                     </div>
                 </div>
-                <div class="col-sm mt-5">
+                <div class="col-lg-4 mt-5">
                     <img src="assets/image/contact_romain.jpg" class="card-img-top" id="dimension_contact" alt="Romain">
                     <div class="card-body text-center">
                         <p>Chef de projet</p>
@@ -46,7 +48,7 @@
                         <p class="card-text">romain.malarmey@viacesi.fr</br>06.73.08.88.77</p>
                     </div>
                 </div>
-                <div class="col-sm mt-5">
+                <div class="col-lg-4 mt-5">
                     <img src="assets/image/contact_dona.jpg" class="card-img-top" id="dimension_contact" alt="Dona">
                     <div class="card-body text-center">
                         <p>Collaborateur</p>

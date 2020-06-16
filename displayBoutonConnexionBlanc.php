@@ -1,7 +1,7 @@
 <?php
                      if (!isset($_SESSION['pseudo'])){
                          ?>
-<div class='col-2 mt-4 bd-highlight' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded text-white'
+<div class='mt-4 bd-highlight text-center' /><a href='' id="bouton-connect" class='btn btn-default btn-rounded text-white'
     data-toggle='modal' data-target='#elegantModalForm'>Connexion</a></div>
 <div class='modal fade' id='elegantModalForm' tabindex='-1' role='dialog' aria-labelledby='myModalLabel'
     aria-hidden='true'>
@@ -43,7 +43,7 @@
         </div>
     </div><?php
                     }else {
-                        echo '<div id="nom_entreprise" class="mt-4 bd-highlight text-white"/>'.$_SESSION['pseudo'].'</div><div class="bd-highlight"/><a href="scriptDeconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded text-white">Deconnexion</a></div>';
+                        echo '<div id="nom_entreprise" class="mt-4 bd-highlight text-white"/>'.$_SESSION['pseudo'].'</div><div class="bd-highlight text-center"/><a href="scriptDeconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded text-white">Deconnexion</a></div>';
                      }
                      ?>
 </div>
