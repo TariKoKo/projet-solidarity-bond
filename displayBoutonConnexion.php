@@ -37,6 +37,7 @@
             </div>
             <!--Footer-->
             <div class='modal-footer mx-5 pt-3 mb-1'>
+                <a href='displayMdpOublié.php' class='blue-text ml-1'>Mot de passe oublié ?</a>
                 <p class='font-small grey-text d-flex justify-content-end'>Vous n'avez pas de comtpe? <a
                         href='pageInscription.php' class='blue-text ml-1'>S'inscrire</a></p>
             </div>

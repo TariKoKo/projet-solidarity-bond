@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -29,47 +29,50 @@
             </ul>
         </div>
     </nav>
-    <div class="container card">
+    <div class="container card ">
         <div class="row">
-            <div class="col-lg-3 couleurCompte">
-                <h3>Compte</h3>
-                <h3 class="Suividelivraison">Suivi livraison</h3>
-                <div class="historique">
-                    <a class="stylehistorique" href="pageCommande.php">Historique des commandes</a>
-                </div>
+            <div class="col-lg-3 couleurCompte pt-lg-3">
+                <h3>Compte</h3> 
             </div>
-            <div class="col-lg-9 couleurCompte2">
+            <div class="col-lg-9 couleurCompte2 pt-lg-3">
                 <div class="row">
                     <div class="col-lg-6">
                         <h4>ADDRESSE E-MAIL</h4>
-                        <p>piexxxxxxxxxx@gmxxx.com</p>
+                        <p><?php echo ($_SESSION['email']);  ?></p>
                     </div>
                     <div class="col-lg-6 mt-lg-4">
-                        <a href=""><img class="dimension_Logo" src="assets/image/Logo_changement.png"
+                        <a href="displayChangementEmail.php"><img class="dimension_Logo" src="assets/image/Logo_changement.png"
                                 alt="logo changement"></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <h4>MOT DE PASSE</h4>
-                        <p>pdfghyshfdgxdfsx</p>
+                        <p><?php echo '***********************************'  ?></p>
                     </div>
                     <div class="col-lg-6 mt-lg-4">
-                        <a href=""><img class="dimension_Logo" src="assets/image/Logo_changement.png"
+                        <a href="displayChangementMdp.php"><img class="dimension_Logo" src="assets/image/Logo_changement.png"
                                 alt="logo changement"></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <h4>NUMERO DE TELEPHONE</h4>
-                        <p>0102030405</p>
+                        <p><?php echo ($_SESSION['numero']);  ?></p>
                     </div>
                     <div class="col-lg-6 mt-lg-4">
-                        <a href=""><img class="dimension_Logo" src="assets/image/Logo_changement.png"
+                        <a href="displayChangementNumero.php"><img class="dimension_Logo" src="assets/image/Logo_changement.png"
                                 alt="logo changement"></a>
                     </div>
                 </div>
                 <hr>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-3 couleurCompte">
+                <h3 class="Suividelivraison">Suivi commande</h3>
+                </div>
+                <div class="col-lg-9 couleurCompte2">
                 <div>
                     <h4>DETAIL DE LA COMMANDE</h4>
                     <p>Nombre de crochet : x</p>
@@ -78,9 +81,16 @@
                     <h4>ETAT DE LA COMMANDE</h4>
                     <p>En cours de préparation</p>
                 </div>
+                </div>
+            </div>
+                <div class="row couleurCompte">
+                <div class="historique col-lg-3 ">
+                    <a class="stylehistorique" href="pageCommande.php">Historique des commandes</a>
+                </div>
+                <div class="col-lg-9 couleurCompte2"></div>
+                </div>
             </div>
         </div>
-    </div>
     <footer id="footerCompte" class="mt-5 mt-lg-0">
         <?php include('displayFooter.php'); ?>
     </footer>
