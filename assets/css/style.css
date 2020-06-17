@@ -134,6 +134,19 @@ h1 {
   font-size: 130%;
 }
 
+.text_compte:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+
+.text_compte {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  font-weight: normal;
+}
 
 
 #container {
@@ -176,6 +189,7 @@ input[type=submit]:hover {
   font-size: 25px;
   font-weight: bold;
 }
+
 
 #nom_entreprise {
   font-size: 25px;

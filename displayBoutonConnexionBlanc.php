@@ -43,7 +43,7 @@
         </div>
     </div><?php
                     }else {
-                        echo '<div id="nom_entreprise" class="mt-4 bd-highlight text-white"/>'.$_SESSION['pseudo'].'</div><div class="bd-highlight text-center"/><a href="scriptDeconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded text-white">Deconnexion</a></div>';
+                        echo '<a href="pageCompte.php" class="text_compte mt-4 btn btn-default btn-rounded text-white">'.$_SESSION['pseudo'].' - Mon compte</a><div class="bd-highlight text-center"/><a href="scriptDeconnexion.php" id="bouton-connect" class="btn btn-default btn-rounded text-white">Deconnexion</a></div>';
                      }
                      ?>
 </div>
