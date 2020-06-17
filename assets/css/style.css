@@ -29,15 +29,19 @@ footer {
   position: absolute;
 }
 
-#footerContact{
+#footerContact {
   position: absolute;
 }
 
-#footerDiscussion{
+#footerDiscussion {
   position: absolute;
 }
 
-#footerInscription{
+#footerInscription {
+  position: absolute;
+}
+
+#footerCompte {
   position: absolute;
 }
 
@@ -111,6 +115,17 @@ footer {
   background-attachment: fixed;
 }
 
+#compte {
+  color: black;
+  background-color: white;
+  background-image: url("../../assets/image/Fond_moncompte.jpg");
+  background-size: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #contact {
   background-color: #C0C0C0;
 }
@@ -125,7 +140,7 @@ h1 {
 
 .text_logo:hover {
   font-weight: bold;
-  color:black;
+  color: black;
   text-decoration: none;
 }
 
@@ -135,7 +150,7 @@ h1 {
 }
 
 .text_compte:hover {
-  color:black;
+  color: black;
   text-decoration: underline;
 }
 
@@ -276,6 +291,42 @@ input[type=submit]:hover {
   padding-bottom: 1em;
 }
 
+.dimension_Logo {
+  width: 25px;
+}
+
+.Suividelivraison {
+  margin-top: 228px;
+}
+
+.historique {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.stylehistorique {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.stylehistorique:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+hr {
+  background-color: black;
+}
+
+.couleurCompte {
+  background-color: #D3D3D3;
+}
+
+.couleurCompte2 {
+  background-color: #DCDCDC;
+}
+
 @media screen and (max-width: 991px) {
   .logo {
     height: 75px;
@@ -293,7 +344,7 @@ input[type=submit]:hover {
     position: relative;
   }
 
-  #footerContact{
+  #footerContact {
     position: relative;
   }
 
@@ -306,19 +357,21 @@ input[type=submit]:hover {
     size: cover;
   }
 
-.card1 {
+  .card1 {
     width: 300px;
     align-items: center;
   }
+
   .card2 {
     align-items: center;
   }
 
   #h5:hover {
-  font-weight: normal;
+    font-weight: normal;
   }
+
   #h5 {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
@@ -342,17 +395,22 @@ input[type=submit]:hover {
   #footerPartenariat {
     position: relative;
   }
-  #footerContact{
+
+  #footerContact {
     position: relative;
   }
 
-  #footerDiscussion{
-  position: relative;
-}
-  #footerInscription{
-  position: relative;
-}
+  #footerDiscussion {
+    position: relative;
+  }
 
+  #footerInscription {
+    position: relative;
+  }
+
+  #footerCompte{
+    position: relative;
+  }
 
   .text_logo img {
     width: 130px;
@@ -367,17 +425,18 @@ input[type=submit]:hover {
     width: 190px;
     align-items: center;
   }
+
   .card2 {
     align-items: center;
   }
 
   #dimension_contact {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 220px;
-  height: 220px;
-  border-radius: 100%;
-}
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+  }
 
 }
