@@ -70,7 +70,9 @@ if($decrypt){
 	}
 }
 else{
-		header('Location: pageInscription.php');		
+		$message="Adresse email ou mot de passe incorrect";
+		echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
+		header("Refresh:0; url=pageIndex.php");
 		exit();
 }
 //Fermeture de la connexion

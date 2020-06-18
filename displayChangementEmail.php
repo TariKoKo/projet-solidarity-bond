@@ -32,9 +32,10 @@
     <div class="container card ">
         <div class="row">
             <div class="col-lg-3 couleurCompte pt-lg-3">
-                <h3>Compte</h3> 
+                <h3>Compte</h3>
+                <div class='mt-4 bd-highlight'/><a href='pageCompte.php' id="bouton_retour_compte" class='btn btn-default btn-rounded'>Retour au compte</a></div> 
             </div>
-            <div class="col-lg-9 couleurCompte2 pt-lg-3 pl-lg-5 b">
+            <div class="col-lg-9 couleurCompte2 pt-lg-3 pl-lg-5">
                 <div class="row">
                     <form method="post" action="scriptChangementEmail.php" autocomplete="on">
                         
