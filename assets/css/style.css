@@ -324,6 +324,12 @@ hr {
   background-color: #DCDCDC;
 }
 
+#bouton_retour_compte{
+  margin-top: 130px;
+  padding: 0;
+}
+
+
 @media screen and (max-width: 991px) {
   .logo {
     height: 75px;

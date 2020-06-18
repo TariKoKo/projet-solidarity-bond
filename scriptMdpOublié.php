@@ -45,5 +45,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 			echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
 			header("Refresh:0; url=pageIndex.php");
 			exit();
-		}
+	}
+	else{
+			$message="Adresse email introuvable";
+			echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
+			header("Refresh:0; url=pageIndex.php");
+			exit();
+	}
  ?>
