@@ -22,8 +22,8 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
     <h1 class="ml-5 d-none d-lg-block p-0">Discussion</h1>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto ">
-        <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
-        <li class=" nav-item p-0 col-lg-4">  
+        <li class=" nav-item p-0 col-lg-4"> 
+        <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?> 
             <div class="mt-lg-4 mt-0 bd-highlight text-center" /><a href='pageDiscussion.php' id="bouton-connect"
                 class='btn btn-default btn-rounded'>Liste des Discussions</a>
             </div>
@@ -33,6 +33,12 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
             class='btn btn-default btn-rounded'>Gérer les inscriptions</a>
             </div>
         <?php } ?>
+        <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
+            <div class=" mt-lg-4 mt-0 bd-highlight text-center"/><a href='pageCommande.php' id="bouton-connect"
+                class='btn btn-default btn-rounded'>Passer une commande</a>
+            </div>
+        <?php } ?>
+        </li>
         </li>
         <li class="nav-item ">
             <?php include('displayBoutonConnexion.php'); ?>
