@@ -12,9 +12,9 @@ $requete3->execute();
 $ligne3=$requete3->fetch();
 
 $hash = $ligne3['Mot_de_passe'];
-$decrypt = password_verify($ligne3['Mot_de_passe'], $hash);
+$decrypt = password_verify($Mot_de_passe, $hash);
 
-if ($decrypt = $Mot_de_passe) {
+if ($decrypt == $Mot_de_passe) {
 
 	$requete = $bdd->prepare("UPDATE utilisateur SET Mot_de_passe = :NewMot_de_passe WHERE ID_Utilisateur = :id");
 	$crypt = password_hash($NewMot_de_passe, PASSWORD_DEFAULT);

@@ -16,6 +16,15 @@ use PHPMailer\PHPMailer\PHPMailer;
 		require_once "vendor/PHPMailer/SMTP.php";
 		require_once "vendor/PHPMailer/Exception.php";
 
+		$Quantite = isset($_POST['Quantite']) ? $_POST['Quantite']: NULL;
+		$ID_Utilisateur = $_SESSION['id'];
+		var_dump($ID_Utilisateur, $Quantite);
+
+		$requete = $bdd->prepare("INSERT INTO commande (ID_Utilisateur, Quantite, Etat) VALUES ( :ID_Utilisateur, :Quantite, 0)");
+        $requete->bindValue(':ID_Utilisateur', $ID_Utilisateur, PDO::PARAM_STR); 
+        $requete->bindValue(':Quantite', $Quantite, PDO::PARAM_STR);
+		$requete->execute();
+
 		$mail = new PHPMailer();
 
 		//SMTP settings
@@ -31,8 +40,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 		$mail->isHTML(true);
 		$mail->setFrom("solidarity.bond.cesi@gmail.com", "Solidarity Bond");
 		$mail->addAddress($Adresse_email);
-		$mail->Subject = "Demande de nouveau mot de passe";
-		$mail->Body = "Bonjour,<br><br> Vous avez fait une demande pour changer de mot de passe.<br>Voici le lien où vous pourrez choisir un nouveau mot de passe :<br>http://localhost/projet-solidarity-bond/displayMdp.php <br><br> Cordialement,<br>L'équipe de Solidarity-Bond.";
+		$mail->Subject = "Votre commande";
+		$mail->Body = "Bonjour,<br><br> Vous venez de passer une commande sur notre site. Vous avez commandé " .$Quantite. " crochet(s).<br>Vous pouvez suivre l'avancement de l'envoi de votre commande dans votre espace compte. <br><br> Cordialement,<br>L'équipe de Solidarity-Bond.";
 
 		if($mail->send()){
 			$response = "Mail send";
@@ -41,7 +50,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 			$response = "Nope :" . $mail->ErrorInfo;
 		}
 
-			$message="Votre demande de réinitialisation de mot de passe à bien été prise en compte, vous allez recevoir un email avec un lien pour le modifier!";
+			$message="Votre commande à bien été prise en compte, vous allez recevoir un email de récapitulation de votre commande";
 			echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
 			header("Refresh:0; url=pageIndex.php");
 			exit();
@@ -53,4 +62,3 @@ use PHPMailer\PHPMailer\PHPMailer;
 			exit();
 	}
  ?>
- 

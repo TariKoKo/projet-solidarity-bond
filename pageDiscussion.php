@@ -27,6 +27,11 @@
                 class='btn btn-default btn-rounded'>Gérer les inscriptions</a>
             </div>
             <?php } ?>
+            <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
+            <div class=" mt-lg-4 mt-0 bd-highlight text-center"/><a href='pageCommande.php' id="bouton-connect"
+                class='btn btn-default btn-rounded'>Passer une commande</a>
+            </div>
+            <?php } ?>
         </li>
         <li class="nav-item">
             <?php include('displayBoutonConnexion.php'); ?>
