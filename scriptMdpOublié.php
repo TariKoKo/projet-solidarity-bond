@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;
 
@@ -32,7 +32,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 		$mail->setFrom("solidarity.bond.cesi@gmail.com", "Solidarity Bond");
 		$mail->addAddress($Adresse_email);
 		$mail->Subject = "Demande de nouveau mot de passe";
-		$mail->Body = "Bonjour,<br><br> Vous avez fait une demande pour changer de mot de passe.<br>Voici le lien où vous pourrez choisir un nouveau mot de passe :<br>http://localhost/projet-solidarity-bond/displayMdp.php <br><br> Cordialement,<br>L'équipe de Solidarity-Bond.";
+		$mail->Body = "Bonjour,<br><br> Vous avez fait une demande pour changer de mot de passe.<br>Voici le lien où vous pourrez choisir un nouveau mot de passe :<br>".$url."projet-solidarity-bond/displayMdp.php <br><br> Cordialement,<br>L'équipe de Solidarity-Bond.";
 
 		if($mail->send()){
 			$response = "Mail send";
