@@ -68,6 +68,7 @@
                 <hr>
             </div>
         </div>
+        <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 1){ ?>
             <div class="row">
                 <div class="col-sm-3 couleurCompte">
                 <h3 class="Suividelivraison">Suivi commande</h3>
@@ -76,13 +77,22 @@
                     <?php include('displayCompte.php') ?>
                 </div>
             </div>
-                <div class="row couleurCompte">
+            <div class="row couleurCompte">
                 <div class="historique col-sm-3 ">
                     <a class="stylehistorique" href="pageHistoriqueCommande.php">Historique des commandes</a>
                 </div>
-                <div class="col-sm-9 couleurCompte2"></div>
+                <div class="col-sm-9 couleurCompte2">
                 </div>
             </div>
+        <?php } elseif (isset($_SESSION['status']) && $_SESSION['status'] == 2) { ?>
+            <div class="row couleurCompte">
+                <div class="historique col-sm-3 ">
+                    <a class="stylehistorique" href="pageHistoriqueCommande.php">Liste des commandes</a>
+                </div>
+                <div class="col-sm-9 couleurCompte2">
+                </div>
+            </div>
+        <?php } ?>
         </div>
     <footer id="footerCompte" class="mt-5 mt-lg-0">
         <?php include('displayFooter.php'); ?>

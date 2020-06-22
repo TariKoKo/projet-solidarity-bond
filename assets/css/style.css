@@ -329,6 +329,11 @@ hr {
   padding: 0;
 }
 
+#bouton_retour_compte2{
+  margin-top: 500px;
+  padding: 0;
+}
+
 
 @media screen and (max-width: 991px) {
   .logo {
