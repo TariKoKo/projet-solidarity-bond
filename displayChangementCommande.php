@@ -30,6 +30,7 @@
         </div>
     </nav>
     <div class="container card ">
+        <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 2){ ?>
         <div class="row">
             <div class="col-lg-3 couleurCompte pt-lg-3">
                 <h3>Compte</h3>
@@ -43,6 +44,7 @@
             </div>"; ?>
             
         </div>
+    <?php } ?>
     </div>
     <footer id="footerCompte" class="mt-5 mt-lg-0">
         <?php include('displayFooter.php'); ?>
