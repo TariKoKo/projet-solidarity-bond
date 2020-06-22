@@ -2,7 +2,7 @@
 session_start();
 
 // Adapter dbname et mot de passe si besoin
-include('scriptBDD.php');
+include('config.php');
 
 // Récupération des données utilisateurs
 $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;

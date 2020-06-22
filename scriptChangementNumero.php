@@ -1,6 +1,6 @@
 <?php  
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $Numero_tel = isset($_POST['Numero_tel']) ? $_POST['Numero_tel']: NULL;
 $NewNumero_tel = isset($_POST['NewNumero_tel']) ? $_POST['NewNumero_tel']: NULL;

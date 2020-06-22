@@ -7,7 +7,7 @@ $id_Discussion = $_POST['id'];
 $id_Entreprise=$_SESSION['id'];
 $id_Admin=$_SESSION['id'];
 
-include('scriptBDD.php');
+include('config.php');
 
 $requete = $bdd->prepare("INSERT INTO discussion (ID_Discussion, Commentaire, ID_Entreprise, ID_Admin) VALUES(:id_discussion, :commentaire, :id_entreprise, :id_admin)");
 $requete->bindValue(':id_discussion', $id_Discussion, PDO::PARAM_STR);

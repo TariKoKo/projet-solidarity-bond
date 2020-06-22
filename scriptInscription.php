@@ -1,6 +1,6 @@
 <?php
 
-include('scriptBDD.php');
+include('config.php');
 use PHPMailer\PHPMailer\PHPMailer;
 require_once "vendor/PHPMailer/PHPMailer.php";
 require_once "vendor/PHPMailer/SMTP.php";

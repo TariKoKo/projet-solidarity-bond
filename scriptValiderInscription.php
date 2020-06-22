@@ -1,6 +1,6 @@
 <?php  
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $requete = $bdd->prepare("UPDATE utilisateur SET Status = 1 WHERE ID_Utilisateur = :ID_Utilisateur");
 $requete->bindValue(':ID_Utilisateur', $_GET['ID_Utilisateur'], PDO::PARAM_STR);
