@@ -18,13 +18,13 @@ if ($ligne = $requete->fetch()) { ?>
                 <div>
                     <h4>ETAT DE LA COMMANDE</h4>
                     <p><?php if ($ligne['Etat'] == 0) {
-							echo "En cours de préparation";
+							echo "En cours d'impression";
 						}
 						elseif ($ligne['Etat'] == 1) {
-							echo "En cours de livraison";
+							echo "Prête à être récupérée";
 						}
 						elseif ($ligne['Etat'] == 2) {
-							echo "Livré";
+							echo "Commande récupérée";
 						} ?></p>
                 </div>
 <?php 

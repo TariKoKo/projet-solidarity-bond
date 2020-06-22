@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -31,27 +31,23 @@
     </nav>
     <div class="container card ">
         <div class="row">
-            <?php if (isset($_SESSION['status']) && $_SESSION['status'] == 1) { ?>
-            <div class="col-sm-3 couleurCompte pt-lg-3">
-                <h3>Historique des commandes</h3>
-                <a href='pageCompte.php' id="bouton_retour_compte" class='btn btn-default btn-rounded'>Retour au compte</a>  
+            <div class="col-lg-3 couleurCompte pt-lg-3">
+                <h3>Compte</h3>
+                <div class='mt-4 bd-highlight'/><a href='pageHistoriqueCommande.php' id="bouton_retour_compte" class='btn btn-default btn-rounded'>Retour aux commandes</a></div> 
             </div>
-        <?php }elseif (isset($_SESSION['status']) && $_SESSION['status'] == 2) { ?>
-            <div class="col-sm-3 couleurCompte pt-lg-3">
-                <h3>Liste des commandes</h3>
-                <a href='pageCompte.php' id="bouton_retour_compte2" class='btn btn-default btn-rounded'>Retour au compte</a>  
-            </div>
-        <?php } ?>
-            <div class="col-sm-9 couleurCompte2 pt-lg-3">
-                <?php include('displayHistorique.php') ?>
-            </div>
+            <?php echo "<div class='col-lg-9 couleurCompte2 pt-lg-3 pl-lg-5'>
+                    <h5>Etat de la commande :</h5></br>
+                    <a href='scriptChangementCommande.php?Changement=0&amp;ID=".$_GET['ID']."' class='badge'>En cours d impression</a></br></br>
+                    <a href='scriptChangementCommande.php?Changement=1&amp;ID=".$_GET['ID']."' class='badge'>Prête à être récupérée</a></br></br>
+                    <a href='scriptChangementCommande.php?Changement=2&amp;ID=".$_GET['ID']."' class='badge' >Commande récupérée</a></br></br>
+            </div>"; ?>
+            
         </div>
     </div>
     <footer id="footerCompte" class="mt-5 mt-lg-0">
         <?php include('displayFooter.php'); ?>
     </footer>
 </body>
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script>

@@ -82,7 +82,7 @@
                         confidentiel.</p>
                 </li>
             </ul>
-            <h4>ARTICLE 4 : accès aux services</h4>
+            <h4>ARTICLE 4 : Accès aux services</h4>
             <p>Le site permet à l'Utilisateur un accès gratuit aux services suivants :</p>
             <ul>
                 <li>
@@ -118,7 +118,7 @@
                 suspension ou à la modification du présent contrat.</p>
             <p>L'Utilisateur a la possibilité de contacter le site par messagerie
                 électronique à l'adresse romain.malarmey@viacesi.fr</p>
-            <h4>ARTICLE 5 : Proptiété intellectuelle</h4>
+            <h4>ARTICLE 5 : Propriété intellectuelle</h4>
             <p>Les marques, logos, signes et tout autre contenu du site font l'objet
                 d'une protection par le Code de la propriété intellectuelle et plus
                 particulièrement par le droit d'auteur.</p>
