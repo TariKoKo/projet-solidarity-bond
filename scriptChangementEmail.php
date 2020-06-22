@@ -1,6 +1,6 @@
 <?php  
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;
 $NewAdresse_email = isset($_POST['NewAdresse_email']) ? $_POST['NewAdresse_email']: NULL;

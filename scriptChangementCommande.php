@@ -1,6 +1,6 @@
 <?php  
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $requete = $bdd->prepare("UPDATE commande SET Etat = :Etat WHERE ID = :ID");
 $requete->bindValue(':Etat', $_GET['Changement'], PDO::PARAM_STR);

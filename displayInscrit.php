@@ -1,5 +1,5 @@
 <?php
-include('scriptBDD.php');
+include('config.php');
 
 $requete = $bdd->prepare("SELECT * FROM utilisateur WHERE status = 1");
 $requete->execute();  

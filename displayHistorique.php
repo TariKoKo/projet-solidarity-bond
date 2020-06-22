@@ -1,5 +1,5 @@
  <?php
-include('scriptBDD.php');
+include('config.php');
 
 $ID_Utilisateur = $_SESSION['id'];
 

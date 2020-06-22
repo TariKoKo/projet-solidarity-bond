@@ -1,5 +1,5 @@
 <?php
-include('scriptBDD.php');
+include('config.php');
 if(isset($_SESSION['status']) && $_SESSION['status'] == 2){
 
 $requete = $bdd->prepare("SELECT * FROM utilisateur JOIN discussion ON utilisateur.ID_Utilisateur = discussion.ID_Utilisateur WHERE status = 1");

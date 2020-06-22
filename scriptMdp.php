@@ -1,6 +1,6 @@
 <?php  
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $Adresse_email = isset($_POST['Adresse_email']) ? $_POST['Adresse_email']: NULL;
 $Mot_de_passe = isset($_POST['Mot_de_passe']) ? $_POST['Mot_de_passe']: NULL;

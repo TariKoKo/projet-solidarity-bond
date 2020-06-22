@@ -1,6 +1,6 @@
 <?php  
 session_start();
-include('scriptBDD.php');
+include('config.php');
 
 $Mot_de_passe = isset($_POST['Mot_de_passe']) ? $_POST['Mot_de_passe']: NULL;
 $NewMot_de_passe = isset($_POST['NewMot_de_passe']) ? $_POST['NewMot_de_passe']: NULL;

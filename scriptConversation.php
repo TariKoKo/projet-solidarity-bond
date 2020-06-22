@@ -1,7 +1,7 @@
 <?php
 session_start();
 var_dump($_SESSION['ID_Recup']);
-include('scriptBDD.php');
+include('config.php');
 
 
 if(isset($_SESSION['status']) && $_SESSION['status'] == 2){
