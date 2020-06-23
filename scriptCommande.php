@@ -50,6 +50,31 @@ use PHPMailer\PHPMailer\PHPMailer;
 			$response = "Nope :" . $mail->ErrorInfo;
 		}
 
+		$mail2 = new PHPMailer();
+
+        //SMTP settings
+        $mail2->isSMTP();
+        $mail2->Host = "smtp.gmail.com";
+        $mail2->SMTPAuth = true;
+        $mail2->Username = "solidarity.bond.cesi@gmail.com";
+        $mail2->Password = "Solidarity23";
+        $mail2->Port = 465; //587
+        $mail2->SMTPSecure = "ssl"; //tls
+
+        //Email settings
+        $mail2->isHTML(true);
+        $mail2->setFrom("solidarity.bond.cesi@gmail.com", "Solidarity Bond");
+        $mail2->addAddress("solidarity.bond.cesi@gmail.com");
+        $mail2->Subject = "Demande d'inscription";
+        $mail2->Body = "Bonjour,<br><br> Un nouvel utilisateur (".$_POST['Adresse_email'].") vient de passer une commande de ".$Quantite." crochet(s) sur votre site.<br><br> Cordialement,<br>L'équipe de Solidarity-Bond.";
+
+        if($mail2->send()){
+            $response = "Mail send";
+        }
+        else{
+            $response = "Nope :" . $mail2->ErrorInfo;
+        }
+
 			$message="Votre commande à bien été prise en compte, vous allez recevoir un email de récapitulation de votre commande";
 			echo '<script type="text/javascript">window.alert("'.$message.'");</script>';
 			header("Refresh:0; url=pageIndex.php");
