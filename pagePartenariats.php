@@ -34,10 +34,10 @@
         <div class="container mt-4">
             <div id="photoPartenaire" class="row justify-content-center">
                 <div class="card1 card  p-2 col-lg-5 mt-5 m-lg-auto m-md-auto mt-lg-0">
-                    <img class="card-img-top" src="assets/image/carrefour.png" alt="carrefour">
+                    <img class="card-img-top" src="" alt="">
                 </div>
                 <div class="card1 card  p-2 col-lg-5 mt-5 m-lg-auto m-md-auto mt-lg-0">
-                    <img class="card-img-top" src="assets/image/leclerc.png" alt="leclerc">
+                    <img class="card-img-top" src="" alt="">
                 </div>
             </div>
     </main>
