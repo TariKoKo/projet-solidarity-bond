@@ -46,7 +46,7 @@
         </div>
         <img id="crochet2" src="assets/image/CrochetAmélioré.png">
         <p class="p-sm-5 p-2">
-            Hauteur : 5.00 mm </br></br>
+            Hauteur : 2,30 cm </br></br>
             Tous les Fillets (soudure d’angle sur tous les côtés) : Radius = 0.50 mm ; Diamètre = 1.00 mm  </br>
             Fabrication : Imprimante 3D  </br></br>
             Matière : L'ABS (acrylonitrile butadiène styrène) </br>
