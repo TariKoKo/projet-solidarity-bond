@@ -54,9 +54,9 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
         <form method="post" action="scriptConversation.php" autocomplete="off">
             <div class="container pt-5">
                 <div class="row">
-                    <input class="newcomment text-center col-10" name="texte" type="text"
+                    <input class="newcomment text-center col-sm-10 mb-lg-0 mb-2" name="texte" type="text"
                         placeholder="Ecrire un message" required="required" />
-                    <input type='submit' value='Envoyer' class='btn blue-gradient btn-rounded z-depth-1a col-2'>
+                    <input type='submit' value='Envoyer' class='btn blue-gradient btn-rounded z-depth-1a col-sm-2'>
                 </div>
             </div>
         </form>
@@ -70,9 +70,9 @@ $_SESSION['ID_Recup'] = $_GET['ID_Utilisateur'];
             <form method="post" action="scriptConversation.php" autocomplete="off">
                 <div class="container pt-5">
                     <div class="row">
-                        <input class="newcomment text-center col-10" name="texte" type="text"
+                        <input class="newcomment text-center col-sm-10 mb-lg-0 mb-2" name="texte" type="text"
                             placeholder="Ecrire un message" required="required" />
-                        <input type='submit' value='Envoyer' class='btn blue-gradient btn-rounded z-depth-1a col-2'>
+                        <input type='submit' value='Envoyer' class='btn blue-gradient btn-rounded z-depth-1a col-sm-2'>
                     </div>
                 </div>
             </form>
